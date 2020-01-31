@@ -31,4 +31,5 @@ return [
         'http://amodvis.local.com',
         'https://ec-control-panel.wezeroplus.com'
     ],
+    'react_base_url' => env('REACT_BASE_URL')
 ];

@@ -20,15 +20,8 @@ class ModuleService
 
     public function getFrontVersion()
     {
-        if (App::environment(PROD)) {
-            $ret = app(FpfHttpClient::class)->get('https://amodvis-react.prod.com/public/version.txt');
-        } elseif (App::environment(STG)) {
-            $ret = app(FpfHttpClient::class)->get('https://amodvis-react.tester.com/public/version.txt');
-        } elseif (App::environment(LOCAL)) {
-            $ret = app(FpfHttpClient::class)->get('https://amodvis-react.local.com/public/version.txt');
-        } else {
-            $ret = getOriginEnv('FRONT_VERSION');
-        }
+        $react_base_url = config('common.react_base_url');
+        $ret = app(FpfHttpClient::class)->get($react_base_url . 'public/version.txt');
         $ret = trim($ret);
         if (is_numeric($ret)) {
             return $ret;
