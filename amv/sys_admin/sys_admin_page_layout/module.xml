@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf8"?>
+<module>
+    <parameters>
+        <group title="">
+            <section title="HD" folded="false">
+                <param description="" formType="layout" label="头部布局" name='hd' ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="BD" folded="false">
+                <param description="" formType="layout" label="主体布局" name='bd' ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="FT" folded="false">
+                <param description="" formType="layout" label="底部布局" name='ft' ptype="text"
+                       readonly="false"></param>
+            </section>
+        </group>
+    </parameters>
+</module>

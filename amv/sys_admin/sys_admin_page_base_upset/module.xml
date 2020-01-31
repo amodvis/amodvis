@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf8"?>
+<module>
+    <parameters>
+        <group title="基本信息设置">
+            <section title="" folded="false">
+                <param description="格式:英文数字下划线斜杠" formType="text" label="页面路径" name="page_name"
+                       verify="^[a-zA-Z0-9_\-/]+$" readonly="true"></param>
+                <param description="^_^" formType="text" label="中文名" name="page_name_cn" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="textarea" label="描述" name="des" ptype="textarea"
+                       readonly="false"></param>
+            </section>
+        </group>
+        <group title="页面头尾代码补充">
+            <section title="" folded="false">
+                <param description="" formType="textarea" label="头部代码" name="head_content" ptype="text"
+                       readonly="false"></param>
+                <param description="" formType="textarea" label="尾部代码" name="foot_content" ptype="text"
+                       readonly="false"></param>
+            </section>
+        </group>
+        <group title="其他设置">
+            <section title="" folded="false">
+                <param description="" formType="radio" label="是否开启下拉更新" name="is_pull_update" pattern="\d+"
+                       readonly="false">
+                    <option value="0">否</option>
+                    <option value="1" selected="selected">是</option>
+                </param>
+            </section>
+            <section title="" folded="false">
+                <param description="是否在其他页面打开时候，也加载当前页面" formType="radio" label="是否预加载" name="is_pre_load"
+                       readonly="false">
+                    <option value="0" selected="selected">否</option>
+                    <option value="1">是</option>
+                </param>
+                <param description="页面是否开启CDN缓存" formType="radio" label="是否开启CDN缓存" name="is_cdn_cache"
+                       readonly="false">
+                    <option value="0" selected="selected">否</option>
+                    <option value="1">是</option>
+                </param>
+                <param description="页面模块接口是否需要登陆态，不可以随意修改" formType="radio" label="页面是否有登陆态" name="is_user_auth"
+                       readonly="false">
+                    <option value="0">否</option>
+                    <option value="1" selected="selected">是</option>
+                </param>
+                <param description="用于不需要修改的页面的隐藏，可通过追加?debug_pages=1显示" formType="radio" label="是否隐藏该页面"
+                       name="is_hide_page"
+                       readonly="false">
+                    <option value="0" selected="selected">否</option>
+                    <option value="1">是</option>
+                </param>
+            </section>
+        </group>
+    </parameters>
+</module>

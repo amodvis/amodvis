@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf8"?>
+<module>
+    <parameters>
+        <group title="基础设置">
+            <section title="" folded="false">
+                <param description="^_^" formType="select" label="模板選擇" name="from_template" ptype="text"
+                       readonly="true">
+                    <option value="mobile_test">测试模板MOBILE</option>
+                    <option value="pc_test">测试模板PC</option>
+                </param>
+                <param description="格式:英文数字下划线" formType="text" label="简称" name="app_name" ptype="text"
+                       readonly="true" verify="^[A-Za-z]+[A-Za-z0-9_]*$"></param>
+                <param description="^_^" formType="text" label="中文名" name="app_name_cn" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="textarea" label="描述" name="des" ptype="textarea"
+                       readonly="false"></param>
+                <param description="可稍后补充" formType="text" label="APP_KEY" name="app_key" ptype="text"
+                       readonly="true"></param>
+                <param description="前台域名，格式示例:www.xxxx.com" formType="text" label="域名绑定" name="app_domain" ptype="text"
+                       readonly="true"></param>
+            </section>
+        </group>
+        <group title="公共头尾代码补充">
+            <section title="" folded="false">
+                <param description="" formType="textarea" label="头部代码" name="head_content" ptype="text"
+                       readonly="false"></param>
+                <param description="" formType="textarea" label="尾部代码" name="foot_content" ptype="text"
+                       readonly="false"></param>
+            </section>
+        </group>
+    </parameters>
+</module>

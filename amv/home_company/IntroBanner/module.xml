@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf8"?>
+<module>
+    <parameters>
+        <group title="常用设置">
+            <section title="第一栏" folded="false">
+                <param description="^_^" formType="text" label="标题" name='name' ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="textarea" label="销售量" name='des' ptype="text"
+                       readonly="false"></param>
+            </section>
+        </group>
+    </parameters>
+</module>

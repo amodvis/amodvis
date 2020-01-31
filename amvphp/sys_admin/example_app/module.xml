@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf8"?>
+<module>
+    <parameters>
+        <group title="">
+            <section title="第1个案例" folded="false">
+                <param description="尺寸198*320" formType="text" label="案例图" name="list[0][pic_url]" ptype="text"
+                       readonly="false"></param>
+                <param description="标题" formType="text" label="案例图" name="list[0][title]" ptype="text"
+                       readonly="false"></param>
+                <param description="url" formType="text" label="前台访问地址" name="list[0][front_link]" ptype="text"
+                       readonly="false"></param>
+                <param description="url" formType="text" label="后台访问地址" name="list[0][backend_link]" ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="第2个案例" folded="false">
+                <param description="尺寸198*320" formType="text" label="案例图" name="list[1][pic_url]" ptype="text"
+                       readonly="false"></param>
+                <param description="标题" formType="text" label="案例图" name="list[1][title]" ptype="text"
+                       readonly="false"></param>
+                <param description="url" formType="text" label="前台访问地址" name="list[1][front_link]" ptype="text"
+                       readonly="false"></param>
+                <param description="url" formType="text" label="后台访问地址" name="list[1][backend_link]" ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="第3个案例" folded="false">
+                <param description="尺寸198*320" formType="text" label="案例图" name="list[2][pic_url]" ptype="text"
+                       readonly="false"></param>
+                <param description="标题" formType="text" label="案例图" name="list[2][title]" ptype="text"
+                       readonly="false"></param>
+                <param description="url" formType="text" label="前台访问地址" name="list[2][front_link]" ptype="text"
+                       readonly="false"></param>
+                <param description="url" formType="text" label="后台访问地址" name="list[2][backend_link]" ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="第4个案例" folded="false">
+                <param description="尺寸198*320" formType="text" label="案例图" name="list[3][pic_url]" ptype="text"
+                       readonly="false"></param>
+                <param description="标题" formType="text" label="案例图" name="list[3][title]" ptype="text"
+                       readonly="false"></param>
+                <param description="url" formType="text" label="前台访问地址" name="list[3][front_link]" ptype="text"
+                       readonly="false"></param>
+                <param description="url" formType="text" label="后台访问地址" name="list[3][backend_link]" ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="第5个案例" folded="false">
+                <param description="尺寸198*320" formType="text" label="案例图" name="list[4][pic_url]" ptype="text"
+                       readonly="false"></param>
+                <param description="标题" formType="text" label="案例图" name="list[4][title]" ptype="text"
+                       readonly="false"></param>
+                <param description="url" formType="text" label="前台访问地址" name="list[4][front_link]" ptype="text"
+                       readonly="false"></param>
+                <param description="url" formType="text" label="后台访问地址" name="list[4][backend_link]" ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="第6个案例" folded="false">
+                <param description="尺寸198*320" formType="text" label="案例图" name="list[5][pic_url]" ptype="text"
+                       readonly="false"></param>
+                <param description="标题" formType="text" label="案例图" name="list[5][title]" ptype="text"
+                       readonly="false"></param>
+                <param description="url" formType="text" label="前台访问地址" name="list[5][front_link]" ptype="text"
+                       readonly="false"></param>
+                <param description="url" formType="text" label="后台访问地址" name="list[5][backend_link]" ptype="text"
+                       readonly="false"></param>
+            </section>
+        </group>
+    </parameters>
+</module>

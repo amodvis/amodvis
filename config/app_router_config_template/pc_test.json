@@ -1,0 +1,219 @@
+[
+  {
+    "path": "/index",
+    "modules": {
+      "hd": [],
+      "bd": [
+        {
+          "main": [
+            {
+              "project_name": "home_company",
+              "module_name": "AblityItems",
+              "page_name": "index",
+              "position": 1,
+              "module_data": {
+                "listType": "product",
+                "list": [
+                  {
+                    "value": "\u6807\u98981",
+                    "des": "\u63cf\u8ff01\u63cf\u8ff01"
+                  },
+                  {
+                    "value": "\u6807\u98982",
+                    "des": "\u63cf\u8ff02\u63cf\u8ff02"
+                  },
+                  {
+                    "value": "\u6807\u98983",
+                    "des": "\u63cf\u8ff03\u63cf\u8ff03"
+                  }
+                ]
+              }
+            },
+            {
+              "project_name": "home_company",
+              "module_name": "CardItems",
+              "page_name": "index",
+              "position": 1,
+              "module_data": {
+                "list": [
+                  {
+                    "name": "\u6807\u98981",
+                    "sold_count": "11",
+                    "des": "\u63cf\u8ff01"
+                  },
+                  {
+                    "name": "\u6807\u98982",
+                    "sold_count": "22",
+                    "des": "\u63cf\u8ff02"
+                  },
+                  {
+                    "name": "\u6807\u98983",
+                    "sold_count": "33",
+                    "des": "\u63cf\u8ff02"
+                  },
+                  {
+                    "name": "\u6807\u98984",
+                    "sold_count": "44",
+                    "des": "\u63cf\u8ff04\u63cf\u8ff04"
+                  }
+                ],
+                "item_exists": "1",
+                "banner_small": null,
+                "_total": 0
+              }
+            },
+            {
+              "project_name": "home_company",
+              "module_name": "IntroBanner",
+              "page_name": "index",
+              "position": 1,
+              "module_data": {
+                "name": "12",
+                "des": "122"
+              }
+            },
+            {
+              "project_name": "home_company",
+              "module_name": "IntroTab",
+              "page_name": "index",
+              "position": 1,
+              "module_data": {
+                "name": "\u6807\u9898bbbb"
+              }
+            }
+          ]
+        },
+        {
+          "sub_min": [],
+          "sub_max": []
+        }
+      ],
+      "ft": []
+    },
+    "is_pull_update": false,
+    "is_hide_page": false,
+    "is_pre_load": false,
+    "is_cdn_cache": false,
+    "is_user_auth": 1
+  },
+  {
+    "path": "/item_search",
+    "modules": {
+      "hd": [],
+      "bd": [
+        {
+          "main": [
+            {
+              "project_name": "home_company",
+              "module_name": "IntroTab",
+              "page_name": "item_search",
+              "position": 1,
+              "module_data": {
+                "name": "\u6807\u9898ffff"
+              }
+            }
+          ]
+        }
+      ],
+      "ft": []
+    },
+    "is_pull_update": false,
+    "is_hide_page": false,
+    "is_pre_load": false,
+    "is_cdn_cache": false,
+    "is_user_auth": 1
+  },
+  {
+    "path": "/item_search/:keyword",
+    "modules": {
+      "hd": [
+        {
+          "main": []
+        },
+        {
+          "sub_min": [],
+          "sub_max": []
+        }
+      ],
+      "bd": [
+        {
+          "main": [
+            {
+              "project_name": "home_company",
+              "module_name": "IntroTab",
+              "page_name": "item_search-:keyword",
+              "position": 1,
+              "module_data": {
+                "name": "\u6807\u9898ggggg"
+              }
+            }
+          ]
+        }
+      ],
+      "ft": [
+        {
+          "main": []
+        },
+        {
+          "sub_min": [],
+          "sub_max": []
+        }
+      ]
+    },
+    "is_pull_update": false,
+    "is_hide_page": false,
+    "is_pre_load": false,
+    "is_cdn_cache": false,
+    "is_user_auth": 1
+  },
+  {
+    "path": "/product/:product_id",
+    "modules": {
+      "hd": [],
+      "bd": [
+        {
+          "main": [
+            {
+              "project_name": "home_company",
+              "module_name": "IntroBanner",
+              "page_name": "product-:product_id",
+              "position": 1,
+              "module_data": []
+            }
+          ]
+        }
+      ],
+      "ft": []
+    },
+    "is_pull_update": false,
+    "is_hide_page": true,
+    "is_pre_load": false,
+    "is_cdn_cache": false,
+    "is_user_auth": 1
+  },
+  {
+    "path": "/article/:article_id",
+    "modules": {
+      "hd": [],
+      "bd": [
+        {
+          "main": [
+            {
+              "project_name": "home_company",
+              "module_name": "IntroBanner",
+              "page_name": "article-:article_id",
+              "position": 1,
+              "module_data": []
+            }
+          ]
+        }
+      ],
+      "ft": []
+    },
+    "is_pull_update": false,
+    "is_hide_page": true,
+    "is_pre_load": false,
+    "is_cdn_cache": false,
+    "is_user_auth": 1
+  }
+]

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf8"?>
+<module>
+    <parameters>
+        <group title="常用设置">
+            <section title="" folded="false">
+                <param description="^_^" formType="warm" label="提示组件" name="warm" ptype="text"
+                       readonly="false">这里其实是一个全新的商品编辑后台
+                </param>
+                <param description="^_^" formType="date_time_month" label="活动开始时间" name="date_time_start" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="date_time_month" label="活动结束时间" name="date_time_end" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="image" label="覆盖图" name="image" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="select" label="标签文字" name="repeat_type" ptype="text"
+                       readonly="false">
+                    <option value="1">首推新品</option>
+                    <option value="2" selected="selected">五折优惠</option>
+                    <option value="3">积分兑换</option>
+                </param>
+            </section>
+        </group>
+    </parameters>
+</module>

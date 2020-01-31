@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf8"?>
+<module>
+    <parameters>
+        <group title="常用设置">
+            <section title="" folded="false">
+                <param description="^_^" formType="show_title" label="标题显示" name="show_title_val" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="item" label="商品" name="items" ptype="text"
+                       readonly="false" show_setting="true"></param>
+                <param description="仅在页面中引用模块方式有效" formType="text" label="推荐位显示个数" name="global_item_num" ptype="text"
+                       readonly="false"></param>
+            </section>
+        </group>
+    </parameters>
+</module>

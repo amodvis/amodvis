@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf8"?>
+<module>
+    <parameters>
+        <group title="常规设置">
+            <section title="第一栏" folded="false">
+                <param description="^_^" formType="text" label="标题" name='list[0][name]' ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="销售量" name='list[0][sold_count]' ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="描述" name="list[0][des]" ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="第二栏" folded="false">
+                <param description="^_^" formType="text" label="标题" name="list[1][name]" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="销售量" name="list[1][sold_count]" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="描述" name="list[1][des]" ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="第三栏" folded="false">
+                <param description="^_^" formType="text" label="标题" name="list[2][name]" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="销售量" name="list[2][sold_count]" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="描述" name="list[2][des]" ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="第四栏" folded="false">
+                <param description="^_^" formType="text" label="标题" name="list[3][name]" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="销售量" name="list[3][sold_count]" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="描述" name="list[3][des]" ptype="text"
+                       readonly="false"></param>
+            </section>
+        </group>
+        <group title="特殊设置">
+            <section title="" folded="false">
+                <param description="^_^" formType="item" label="商品" name='items' ptype="text"
+                       readonly="false" show_setting="true"></param>
+                <param description="尺寸400*200" formType="image" label="活动宣传图小" name="banner_small" ptype="text"
+                       readonly="false"></param>
+            </section>
+        </group>
+    </parameters>
+</module>

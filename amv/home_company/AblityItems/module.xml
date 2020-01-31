@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf8"?>
+<module>
+    <parameters>
+        <group title="常用设置">
+            <section title="第一栏" folded="false">
+                <param description="" formType="select" label="列表类型" name="listType" ptype="text" readonly="true">
+                    <option value="product"  selected="selected">商品列表</option>
+                    <option value="search">搜索列表</option>
+                    <option value="collect">收藏列表</option>
+                </param>
+                <param description="^_^" formType="text" label="标题" name='list[0][value]' ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="描述" name='list[0][des]' ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="第二栏" folded="false">
+                <param description="^_^" formType="text" label="标题" name="list[1][value]" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="描述" name="list[1][des]" ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="第三栏" folded="false">
+                <param description="^_^" formType="text" label="标题" name="list[2][value]" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="描述" name="list[2][des]" ptype="text"
+                       readonly="false"></param>
+            </section>
+        </group>
+    </parameters>
+</module>

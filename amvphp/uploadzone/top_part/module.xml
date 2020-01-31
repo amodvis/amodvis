@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf8"?>
+<module>
+    <parameters>
+        <group title="常用设置">
+            <section title="" folded="false">
+                <param description="" formType="html_editor" label="编辑器组件" name="html_editor" ptype="text"
+                       readonly="false"></param>
+                <param description="" formType="radio" label="单选" name="radio_item" ptype="text"
+                       readonly="false">
+                    <option value="no-repeat">无平铺</option>
+                    <option value="repeat" selected="selected">平铺</option>
+                    <option value="repeat-x">水平平铺</option>
+                    <option value="repeat-y">垂直平铺</option>
+                </param>
+                <param description="" formType="checkbox" label="多选" name="check_item" ptype="text"
+                       readonly="false">
+                    <option value="no-repeat">无平铺</option>
+                    <option value="repeat" selected="selected">平铺</option>
+                    <option value="repeat-x">水平平铺</option>
+                    <option value="repeat-y">垂直平铺</option>
+                </param>
+                <param description="^_^" formType="image" label="图片选择组件" name="image" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="warm" label="提示组件" name="warm" ptype="text"
+                       readonly="false">这里是提示的具体内容
+                </param>
+                <param description="^_^" formType="date_time_month" label="日期" name="date_time_month" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="show_title" label="标题显示" name="show_title_val1" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="item" label="商品" name="item" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="文本框组件" name="item" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="select" label="下拉组件" name="repeat_type" ptype="text"
+                       readonly="false">
+                    <option value="no-repeat">无平铺</option>
+                    <option value="repeat" selected="selected">平铺</option>
+                    <option value="repeat-x">水平平铺</option>
+                    <option value="repeat-y">垂直平铺</option>
+                </param>
+            </section>
+        </group>
+        <group title="其他组设置">
+            <section title="" folded="false">
+                <param description="^_^" formType="image" label="图片选择组件2" name="image2" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="date_time_month" label="日期2" name="date_time_month2" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="show_title" label="标题显示2" name="show_title2" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="category" label="分类2" name="category2" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="select" label="下拉组件2" name="repeat_type2" ptype="text"
+                       readonly="false">
+                    <option value="no-repeat">无平铺</option>
+                    <option value="repeat" selected="selected">平铺</option>
+                    <option value="repeat-x">水平平铺</option>
+                    <option value="repeat-y">垂直平铺</option>
+                </param>
+            </section>
+        </group>
+    </parameters>
+</module>

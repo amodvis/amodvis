@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf8"?>
+<module>
+    <parameters>
+        <group title="常用设置">
+            <section title="" folded="false">
+                <param description="^_^" formType="item" label="组合商品" name="combine_items" ptype="text"
+                       readonly="false" show_setting="true"></param>
+                <param description="^_^" formType="date_time_month" label="活动开始时间" name="date_time_start" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="date_time_month" label="活动结束时间" name="date_time_end" ptype="text"
+                       readonly="false"></param>
+                <param description="尺寸1600*400" formType="image" label="活动宣传图大" name="banner_big" ptype="text"
+                       readonly="false"></param>
+                <param description="尺寸400*200" formType="image" label="活动宣传图小" name="banner_small" ptype="text"
+                       readonly="false"></param>
+                <param description="" formType="html_editor" label="描述" name="html_editor" ptype="text"
+                       readonly="false"></param>
+            </section>
+        </group>
+    </parameters>
+</module>
