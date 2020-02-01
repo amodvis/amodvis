@@ -77,7 +77,7 @@ AMODVIS是前后端分离的架构，前端使用淘宝的飞冰REACT框架，�
 ## 布局组件
 
 ![布局组件](https://github.com/amodvis/amodvis/blob/master/readme/images/layout_edit.png?raw=1)
-g
+
 ## 其他后台组件
 
 ![所有组件](https://github.com/amodvis/amodvis/blob/master/readme/images/all_component.png?raw=1)
