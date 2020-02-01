@@ -1,5 +1,7 @@
 ![amodvis](https://github.com/amodvis/amodvis/blob/master/readme/images/amodvis.png?raw=1)
 
+## 演示地址  [查看](https://admin.amodvis.com)
+
 ## [简介](https://github.com/amodvis/amodvis/blob/master/readme/%E7%AE%80%E4%BB%8B.md#%E7%AE%80%E4%BB%8B)
 
 1. [关于Amodvis](https://github.com/amodvis/amodvis/blob/master/readme/%E7%AE%80%E4%BB%8B.md#%E5%85%B3%E4%BA%8Eamodvis)
