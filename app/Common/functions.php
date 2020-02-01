@@ -9,6 +9,11 @@ function getOriginEnv($key, $default = '')
     if (!$ret && $key === 'FRONT_VERSION') {
         $ret = request()->input('FRONT_VERSION');
     }
+    if($ret==='false'){
+        $ret = false;
+    }elseif($ret === 'true'){
+        $ret = true;
+    }
     return $ret;
 }
 
