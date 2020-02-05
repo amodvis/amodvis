@@ -7,6 +7,7 @@
                        readonly="true">
                     <option value="mobile_test">测试模板MOBILE</option>
                     <option value="pc_test">测试模板PC</option>
+                    <option value="pc_amodvis_company">AMODVIS官网PC</option>
                 </param>
                 <param description="格式:英文数字下划线" formType="text" label="简称" name="app_name" ptype="text"
                        readonly="true" verify="^[A-Za-z]+[A-Za-z0-9_]*$"></param>

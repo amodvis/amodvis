@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf8"?>
+<module>
+    <parameters>
+        <group title="">
+            <section title="" folded="false">
+                <param description="^_^" formType="text" label="第一行文字" name='text1' ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="第二行文字" name='text2' ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="按钮文字" name='btn_text' ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="按钮链接" name='btn_link' ptype="text"
+                       readonly="false"></param>
+            </section>
+        </group>
+    </parameters>
+</module>

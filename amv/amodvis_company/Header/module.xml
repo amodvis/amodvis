@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf8"?>
+<module>
+    <parameters>
+        <group title="">
+            <section title="" folded="false">
+                <param description="^_^" formType="text" label="文字LOGO" name='logo_name' ptype="text"
+                       readonly="false"></param>
+            </section>
+        </group>
+    </parameters>
+</module>

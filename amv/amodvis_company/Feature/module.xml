@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf8"?>
+<module>
+    <parameters>
+        <group title="常规设置">
+            <section title="第一栏" folded="false">
+                <param description="^_^" formType="text" label="标题" name='list[0][title]' ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="image" label="图片" name='list[0][pic]' ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="描述" name="list[0][desc]" ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="第二栏" folded="false">
+                <param description="^_^" formType="text" label="标题" name="list[1][title]" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="image" label="图片" name="list[1][pic]" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="描述" name="list[1][desc]" ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="第三栏" folded="false">
+                <param description="^_^" formType="text" label="标题" name="list[2][title]" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="image" label="图片" name="list[2][pic]" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="描述" name="list[2][desc]" ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="第四栏" folded="false">
+                <param description="^_^" formType="text" label="标题" name="list[3][title]" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="image" label="图片" name="list[3][pic]" ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="描述" name="list[3][desc]" ptype="text"
+                       readonly="false"></param>
+            </section>
+        </group>
+    </parameters>
+</module>

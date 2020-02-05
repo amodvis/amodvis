@@ -1,0 +1,76 @@
+[
+  {
+    "path": "/",
+    "modules": {
+      "hd": [
+        {
+          "main": [
+            {
+              "project_name": "amodvis_company",
+              "module_name": "Header",
+              "page_name": "index",
+              "position": 1
+            }
+          ]
+        }
+      ],
+      "bd": [
+        {
+          "main": [
+            {
+              "project_name": "amodvis_company",
+              "module_name": "Banner",
+              "page_name": "index",
+              "position": 1
+            },
+            {
+              "project_name": "amodvis_company",
+              "module_name": "Introduction",
+              "page_name": "index",
+              "position": 1
+            },
+            {
+              "project_name": "amodvis_company",
+              "module_name": "Feature",
+              "page_name": "index",
+              "position": 1
+            },
+            {
+              "project_name": "amodvis_company",
+              "module_name": "Data",
+              "page_name": "index",
+              "position": 1
+            },
+            {
+              "project_name": "amodvis_company",
+              "module_name": "Resource",
+              "page_name": "index",
+              "position": 1
+            }
+          ]
+        },
+        {
+          "sub_min": [],
+          "sub_max": []
+        }
+      ],
+      "ft": [
+        {
+          "main": [
+            {
+              "project_name": "amodvis_company",
+              "module_name": "Footer",
+              "page_name": "index",
+              "position": 1
+            }
+          ]
+        }
+      ]
+    },
+    "is_pull_update": false,
+    "is_hide_page": false,
+    "is_pre_load": false,
+    "is_cdn_cache": false,
+    "is_user_auth": 1
+  }
+]

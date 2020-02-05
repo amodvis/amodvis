@@ -70,6 +70,7 @@ class AppService
         $create_app_default_pages = json_decode($create_app_default_pages, true);
         foreach ($create_app_default_pages as $item) {
             $page_name = $item['path'];
+            $page_name = $page_name == '/' ? 'index' : $page_name;
             $page_name = trim(str_replace('/', '-', $page_name), '-');
             $modules_origin = $item['modules'];
             $no_module_data = $this->filterModuleConfig($modules_origin);
