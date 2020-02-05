@@ -74,6 +74,7 @@ class RouteServiceProvider extends ServiceProvider
             '01infinity-mall.dd01.fun',
             '01infinity-mall.hktester.com',
             '01infinity-mall.hk01.com',
+            'www.amodvis.com'
         ];
         if (in_array($domain, $bindDomain)) {
             return true;
