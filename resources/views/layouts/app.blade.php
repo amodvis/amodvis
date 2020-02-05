@@ -47,7 +47,7 @@
         }
 
         .logo {
-            background: #2769d0;
+            background:url(https://static-upload.amodvis.com/amodvis/static/image/74/45/22/74452273d1439d2b36ed527e85dff22c.png) 0 0 no-repeat #2769d0;
             width: 160px;
             color: #fff;
             font-size: 16px;
