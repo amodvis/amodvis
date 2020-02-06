@@ -61,7 +61,7 @@
     \App\Classes\Utils\FrontBuilder::pushJs($front_public_domain . 'laravle-amodvis/amodvis/js/kindeditor-4.1.10/plugins/code/prettify.js');
 
     if ('window' == App\Classes\Utils\ComponentReactJS::$env) {
-        \App\Classes\Utils\FrontBuilder::pushJs(config('common.public_ice_dist_url') . 'public/js/react-bundle.min.js');
+//        \App\Classes\Utils\FrontBuilder::pushJs(config('common.public_ice_dist_url') . 'public/js/react-bundle.min.js');
         \App\Classes\Utils\FrontBuilder::pushJs(config('common.public_ice_dist_url') . 'build/library/js/block.js?v=' . $front_version);
     }
     echo \App\Classes\Utils\FrontBuilder::showAllJs();

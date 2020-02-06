@@ -10,7 +10,7 @@ class AuthenticateOptions
     public function handle(Request $request, Closure $next)
     {
         if ('OPTIONS' === $request->method()) {
-            app('app.response')->header('Access-Control-Allow-Headers', 'access-control-allow-origin,authenticate,content-type,content-length,app-key,hk-auth-token,eatojoy-admin-api-key,cache-control');
+            app('app.response')->header('Access-Control-Allow-Headers', 'access-control-allow-origin,authenticate,content-type,content-length,app-key,hk-auth-token,shop-vendor-token,cache-control');
         }
         $allow_list = getOriginEnv('ALLOW_OPTIONS_BASE_URL_LIST');
         $allow_list = explode(',', $allow_list);

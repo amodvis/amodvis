@@ -18,6 +18,9 @@
     ';
     ?>
     <script>
+        window.debuglog = function(info){
+            console.log(info);
+        }
         window.pageApiData = <?php echo $page_api_data;?>;
         window.app_name_by_domain = '<?php echo $app_name_by_domain;?>';
         window.app_key = '<?php echo $app_info->app_key;?>';

@@ -112,15 +112,16 @@ class ComponentReactJS
                 if(typeof rendorBox == "undefined"){
                      ' . $global_var . '.rendorBox = {};
                 }
-                var component = React.createElement(%s, %s);
+                var component = LIBRARY_BLOCKS.React.createElement(%s, %s);
                 var render = function(props){ return component;};
-                var routeElement =   React.createElement(Route,{ "key":"' . $page_location . '","path":"' . $page_location . '"
+                var routeElement =   LIBRARY_BLOCKS.React.createElement(Route,{ "key":"' . $page_location . '","path":"' . $page_location . '"
               ,"render":render});
-                var switchWrap=React.createElement(Switch, {},routeElement);
-                 ' . $global_var . '.rendorBox["' . $key . '"] = ReactDOMServer.renderToString(React.createElement(StaticRouter, {"location":"' . $page_location . '"},switchWrap));
+                var switchWrap= LIBRARY_BLOCKS.React.createElement(Switch, {},routeElement);
+                debugger
+                 ' . $global_var . '.rendorBox["' . $key . '"] = LIBRARY_BLOCKS.ReactDOMServer.renderToString(LIBRARY_BLOCKS.React.createElement(StaticRouter, {"location":"' . $page_location . '"},switchWrap));
              }catch(err){
                 var txt="此页面存在一个错误。\n\n"
-                txt+="错误描述: " + err.description + "\n\n";
+                txt+="错误描述: " + err.message + "\n\n";
                 console.log(txt);
              }
              ',

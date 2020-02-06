@@ -35,10 +35,6 @@ class AuthenticateUserCommon
         $vendor_id = 0;
         $authenticate = $request->header('shop-vendor-token', '');
         if (!$authenticate) {
-            // todo remove
-            $authenticate = $request->header('authenticate', '');
-        }
-        if (!$authenticate) {
             // 后台演示接口走的cookie传token,其他请求走head传token
             $authenticate = Cookie::get('shop_vendor_token');
         }
