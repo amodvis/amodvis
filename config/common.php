@@ -26,10 +26,11 @@ return [
         'secret' => env('AWS_THUMB_SEC_SECRET'),
     ],
     'allow_options_base_urls' => [
-        'https://ec-control-panel.hktester.com',
-        'https://01infinity-mall.hktester.com',
-        'http://amodvis.local.com',
-        'https://ec-control-panel.wezeroplus.com'
+        'https://amodvis.local.com',
+        'https://amodvis-app.local.com',
+        'https://www.amodvis.com',
+        'https://app.amodvis.com',
+        'https://admin.amodvis.com',
     ],
     'react_base_url' => env('REACT_BASE_URL')
 ];
