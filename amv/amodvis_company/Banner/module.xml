@@ -7,9 +7,29 @@
                        readonly="false"></param>
                 <param description="^_^" formType="text" label="第二行文字" name='text2' ptype="text"
                        readonly="false"></param>
-                <param description="^_^" formType="text" label="按钮文字" name='btn_text' ptype="text"
+            </section>
+            <section title="按钮一" folded="false">
+                <param description="^_^" formType="text" label="按钮文字" name='btn_list[0][text]' ptype="text"
                        readonly="false"></param>
-                <param description="^_^" formType="text" label="按钮链接" name='btn_link' ptype="text"
+                <param description="^_^" formType="text" label="按钮链接" name='btn_list[0][link]' ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="按钮二" folded="false">
+                <param description="^_^" formType="text" label="按钮文字" name='btn_list[1][text]' ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="按钮链接" name='btn_list[1][link]' ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="按钮三" folded="false">
+                <param description="^_^" formType="text" label="按钮文字" name='btn_list[2][text]' ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="按钮链接" name='btn_list[2][link]' ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="按钮四" folded="false">
+                <param description="^_^" formType="text" label="按钮文字" name='btn_list[3][text]' ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="按钮链接" name='btn_list[3][link]' ptype="text"
                        readonly="false"></param>
             </section>
         </group>
