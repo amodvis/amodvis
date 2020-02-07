@@ -26,6 +26,8 @@ return [
         'secret' => env('AWS_THUMB_SEC_SECRET'),
     ],
     'allow_options_base_urls' => [
+        'http://localhost:4445',
+        'http://localhost:4444',
         'https://amodvis.local.com',
         'https://amodvis-app.local.com',
         'https://www.amodvis.com',
