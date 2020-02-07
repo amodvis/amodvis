@@ -54,7 +54,7 @@ class ToolsController extends Controller
                 $item['page_des'] = $page_row->page_des ?? '';
             }
         }
-        return json_encode(array_values($page_api_data), JSON_UNESCAPED_SLASHES);
+        return json_encode(array_values($page_api_data), JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
     }
 
     private function getPageInfoMapping($user_id, $app_name)

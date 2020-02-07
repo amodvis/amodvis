@@ -117,7 +117,6 @@ class ComponentReactJS
                 var routeElement =   LIBRARY_BLOCKS.React.createElement(Route,{ "key":"' . $page_location . '","path":"' . $page_location . '"
               ,"render":render});
                 var switchWrap= LIBRARY_BLOCKS.React.createElement(Switch, {},routeElement);
-                debugger
                  ' . $global_var . '.rendorBox["' . $key . '"] = LIBRARY_BLOCKS.ReactDOMServer.renderToString(LIBRARY_BLOCKS.React.createElement(StaticRouter, {"location":"' . $page_location . '"},switchWrap));
              }catch(err){
                 var txt="此页面存在一个错误。\n\n"

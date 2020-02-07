@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf8"?>
+<module>
+    <parameters>
+        <group title="">
+            <section title="" folded="false">
+                <param description="^_^" formType="textarea" label="markdown内容" name='markdown_text' ptype="text"
+                       readonly="false"></param>
+            </section>
+        </group>
+    </parameters>
+</module>
