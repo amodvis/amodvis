@@ -47,7 +47,7 @@
         }
 
         .logo {
-            background:url(https://static-upload.amodvis.com/amodvis/static/image/74/45/22/74452273d1439d2b36ed527e85dff22c.png) 0 0 no-repeat #4053dc;
+            background: url(https://static-upload.amodvis.com/amodvis/static/image/74/45/22/74452273d1439d2b36ed527e85dff22c.png) 0 0 no-repeat #4053dc;
             width: 160px;
             color: #fff;
             font-size: 16px;
@@ -156,7 +156,7 @@
         if(!isset($not_show_main_nav)){
         $nav_arr = [
             ['link' => '/' . $project_type_prefix . 'pages_info/' . $app_name, 'add' => '', 'title' => '页面管理'],
-            ['link' => '/' . $project_type_prefix . 'modules_info/' . $app_name, 'add' => '', 'title' => '综合业务']
+            ['link' => '/' . $project_type_prefix . 'app_project_list/' . $app_name, 'add' => '', 'title' => '模块管理']
         ];
         ?>
         <ul>

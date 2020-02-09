@@ -147,32 +147,16 @@ class IndexController extends Controller
 
     public function appModuleList(Request $request, $app_name, $module_name = '')
     {
-        $view = [];
-        $page = $request->input('page', 1);
-        $page_size = 20;
         $user_id = $request->input('login_vendor_id');
-        $module_service = app(ModuleService::class);
-        $project_name = 'public_project';
-        $module_name_list = config('module_list_page.show_modules');
-        if (!$module_name) {
-            $module_name = array_values($module_name_list);
-        }
-        $module_list = $module_service->getListByModuleNames($project_name, array_values($module_name_list));
-        $module_options['project_name'] = $project_name;
         $module_options['module_name'] = $module_name;
-        $page_options['page'] = $page;
-        $page_options['page_size'] = $page_size;
-        $view['page_list'] = $module_service->getUniqueModuleListByModule($user_id, $app_name, $module_options, $page_options);
         $view['admin'] = true;
         $view['design'] = true;
         $view['app_name'] = $app_name;
-        $view['project_name'] = $project_name;
-        $view['module_name_list'] = $module_list;
         $view['login_vendor_id'] = $user_id;
         $app_info = app(AppService::class)->getOne($user_id, $app_name);
-        $view['title'] = (empty($app_info->app_name_cn) ? $app_info->app_name : $app_info->app_name_cn) . '活动管理';
+        $view['title'] = (empty($app_info->app_name_cn) ? $app_info->app_name : $app_info->app_name_cn) . '模块管理';
         $view['shop_vendor_token'] = HttpAuth::getAmodAppVendorAuth($user_id, $app_name);
-        return view('admin/project_module_list', $view);
+        return view('admin/app_project_list', $view);
     }
 
     public function appProjectModuleList(Request $request, $app_name, $project_name, $module_name = '')
@@ -181,6 +165,7 @@ class IndexController extends Controller
         $page = $request->input('page', 1);
         $page_size = 20;
         $user_id = $request->input('login_vendor_id');
+        $module_options['module_name'] = $module_name;
         $module_service = app(ModuleService::class);
         $module_name_list = [];
         $module_list = $module_service->getListByModuleNames($project_name, array_values($module_name_list));
