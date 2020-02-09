@@ -39,7 +39,7 @@
     </div>
     <?php
     echo '<table class="fashiontable">';
-    echo '<tr><th width="15%">project_name</th><th width="15%">module_name</th><th width="20%">page_name</th><th width="20%">position</th><th width="30%">操作</th></tr>';
+    echo '<tr><th width="15%">project_name</th><th width="20%">module_name</th><th width="25%">page_name</th><th width="10%">position</th><th width="30%">操作</th></tr>';
     foreach ($page_list['data'] as $row) {
         $setting_html = '
 <div class="table_list_btns">
