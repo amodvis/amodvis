@@ -17,7 +17,6 @@ Route::group(['middleware' => ['vendor_web_force_auth']], function () use (
     );
     Route::get('/get_item/' . $module_unique_path, 'Module\ReactIndexController@getItem')->where(
         array_merge($module_unique, [])
-
     );
     Route::get('/page_builder/{app_name}/{page_name}', 'Module\ReactIndexController@pageBuilder')->where(
         ['app_name' => $letter_num, 'page_name' => $page_name_verify]
@@ -34,8 +33,11 @@ Route::group(['middleware' => ['vendor_web_force_auth']], function () use (
     Route::get('/a_page_builder/{app_name}/{page_name}', 'Module\CommonIndexController@pageBuilder')->where(
         ['app_name' => $letter_num, 'page_name' => $page_name_verify]
     );
-    Route::get('/modules_info/{project_name}/{module_name?}', 'IndexController@appModuleList')->where(
-        ['project_name' => $letter_num, 'module_name' => $letter_num]
+//    Route::get('/modules_info/{app_name}/{module_name?}', 'IndexController@appModuleList')->where(
+//        ['project_name' => $letter_num, 'module_name' => $letter_num]
+//    );
+    Route::get('/modules_info/{app_name}/{project_name}/{module_name?}', 'IndexController@appProjectModuleList')->where(
+        ['app_name' => $letter_num, 'project_name' => $letter_num, 'module_name' => $letter_num]
     );
     Route::get('/pages_info/{project_name}', 'IndexController@createAppPage')->where(
         ['project_name' => $letter_num]

@@ -10,16 +10,58 @@ use App\Classes\Services\Goods\GoodsService;
 
 class IndexController extends Controller
 {
+
+    /**
+     * 返回具体小部件的html代码 默认不包括CSS，JS与html，body标签
+     * @param Request $request
+     * @param $app_name
+     * @param $project_name
+     * @param $module_name
+     * @param $page_name
+     * @param $position
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function getItem(Request $request, $app_name, $project_name, $module_name, $page_name, $position)
+    {
+        $design = $request->input('design') ? true : false;
+        $admin = $request->input('admin') ? true : false;
+        $class_name = '\\Amv\\' . $project_name . '\\' . $module_name . '\\DefaultWidget';
+        $options = $request->input('options');
+        $options = json_decode($options, true) ?: [];
+        $view['class_name'] = $class_name;
+        $view['options'] = $options;
+        $view['app_name'] = $app_name;
+        $view['project_name'] = $project_name;
+        $view['page_name'] = $page_name;
+        $view['position'] = $position;
+        $view['module_name'] = $module_name;
+        $view['design'] = $design;
+        $view['admin'] = $admin;
+        $view['page_location'] = '/';
+        $json_item = [
+            'project_name' => $project_name,
+            'module_name' => $module_name,
+            'page_name' => $page_name,
+            'position' => $position,
+        ];
+        $login_vendor_id = $request->input('shop_vendor_id');
+        $module_data = \App\Classes\Widget\Widget::widget($login_vendor_id, $app_name, $json_item);
+        $json_item['module_data'] = $module_data;
+        $view['json_item'] = $json_item;
+        return view('module/get_item_react_open', $view);
+    }
+
+
     public function getModulesData(Request $request, $app_name)
     {
         $modules = $request->input('module_list');
-        if(is_string($modules)){
+        if (is_string($modules)) {
             $modules = json_decode($modules, true);
             $new_modules = [];
-            foreach($modules as $item){
-                $new_modules[] = ['project_name'=>$item[0],'module_name'=>$item[1],'page_name'=>$item[2],'position'=>$item[3]];
+            foreach ($modules as $item) {
+                $new_modules[] = ['project_name' => $item[0], 'module_name' => $item[1], 'page_name' => $item[2], 'position' => $item[3]];
             }
-        }else{
+        } else {
             $new_modules = $modules;
         }
         $vendor_id = $request->input('shop_vendor_id');

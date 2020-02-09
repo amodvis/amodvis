@@ -25,7 +25,7 @@
                             if (1 === $i) {
                                 $select = 'selected="selected"';
                             }
-                            echo '<option value="' . $item->module_name . '" ' . $select . '>' . $item->nick_name . '</option>';
+                            echo '<option value="' . $item->module_name . '" ' . $select . '>' . ($item->nick_name ?: $item->module_name) . '</option>';
                             $i++;
                         }
                         ?>
@@ -39,7 +39,7 @@
     </div>
     <?php
     echo '<table class="fashiontable">';
-    echo '<tr><th width="25%">module_name</th><th width="25%">page_name</th><th width="25%">position</th><th width="25%">操作</th></tr>';
+    echo '<tr><th width="15%">project_name</th><th width="15%">module_name</th><th width="20%">page_name</th><th width="20%">position</th><th width="30%">操作</th></tr>';
     foreach ($page_list['data'] as $row) {
         $setting_html = '
 <div class="table_list_btns">
@@ -47,11 +47,13 @@
 moduleid="' . $row->module_name . '" data-position="' . $row->position . '" data_height="420">
 <a class="ds-bar-edit" href="javascript:void(0);"><span>设置</span></a>
 </span>
+<a target="_blank" href="/get_item/' . $app_name . '/' . $row->project_name_v . '/' . $row->module_name . '/' . $row->page_name . '/' . $row->position . '?admin=1&design=1">可视化</a>
+<a target="_blank" href="' . getOriginEnv('AMOD_API_BASE_URL') . 'api/module_api/get_item_open/' . $app_name . '/' . $row->project_name_v . '/' . $row->module_name . '/' . $row->page_name . '/' . $row->position . '">插入API</a>
 <a target="_blank" href="' . getOriginEnv('AMOD_API_BASE_URL') . 'api/module_api/index/get_one_module_data/' . $app_name . '/' . $row->project_name_v . '/' . $row->module_name . '/' . $row->page_name . '/' . $row->position . '">获取基础API</a>
 <a target="_blank" href="' . getOriginEnv('AMOD_API_BASE_URL') . 'api/module_api/index/get_one_module_product_by_page/' . $app_name . '/' . $row->project_name_v . '/' . $row->module_name . '/' . $row->page_name . '/' . $row->position . '">获取商品翻页API</a>
 </div></div>
 ';
-        echo '<tr><td>' . $row->module_name . '</td>
+        echo '<tr><td>' . $row->project_name_v . '</td><td>' . $row->module_name . '</td>
         <td>' . $row->page_name . '</td><td>' . $row->position . '</td><td>' . $setting_html . '</td></tr>';
     }
     echo '</table>';

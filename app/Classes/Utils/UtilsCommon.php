@@ -552,13 +552,15 @@ EOT;
         }
     }
 
-    public static function frameGlobalSet($key, $value)
+    public
+    static function frameGlobalSet($key, $value)
     {
         request()->request->set($key, $value);
         self::$frame_global_sets[$key] = $key;
     }
 
-    public static function getModulePost()
+    public
+    static function getModulePost()
     {
         $post_data = request()->input();
         foreach ($post_data as $key => $name) {
@@ -576,7 +578,8 @@ EOT;
      * 简单非JSON提交方案
      * @return array
      */
-    public static function getPostData()
+    public
+    static function getPostData()
     {
         $headercontent = file_get_contents("php://input");
         $headercontentarr = explode("&", $headercontent);
@@ -595,7 +598,8 @@ EOT;
     /**
      * 删除反斜杠
      */
-    public static function moveSlashes($arr)
+    public
+    static function moveSlashes($arr)
     {
         if (get_magic_quotes_gpc()) {
             $arr = is_array($arr) ? array_map('stripslashes', $arr) : stripslashes($arr);
@@ -603,7 +607,8 @@ EOT;
         return $arr;
     }
 
-    public static function getDirList($dir)
+    public
+    static function getDirList($dir)
     {
         $ret = [];
         if (is_dir($dir)) {

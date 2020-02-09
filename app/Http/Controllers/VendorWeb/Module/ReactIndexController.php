@@ -32,6 +32,7 @@ class ReactIndexController extends Controller
         $options = json_decode($options, true) ?: [];
         $view['class_name'] = $class_name;
         $view['options'] = $options;
+        $view['app_name'] = $app_name;
         $view['project_name'] = $project_name;
         $view['page_name'] = $page_name;
         $view['position'] = $position;
@@ -51,7 +52,6 @@ class ReactIndexController extends Controller
         $view['json_item'] = $json_item;
         return view('module/get_item_react', $view);
     }
-
 
     public function pageBuilderMobile(Request $request, $app_name, $page_name)
     {

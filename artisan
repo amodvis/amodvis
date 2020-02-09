@@ -14,7 +14,7 @@ define('LARAVEL_START', microtime(true));
 |
 */
 
-require __DIR__ . '/vendor/dd01/laravel-basic-dev/autoload.php';
+require __DIR__ . '/vendor/amodvis/laravel_basic_dev/autoload.php';
 require __DIR__ . '/vendor/autoload.php';
 
 $app = require_once __DIR__ . '/bootstrap/app.php';

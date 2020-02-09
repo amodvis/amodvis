@@ -33,7 +33,9 @@ class ModuleBasicDao
     {
         $model = DB::table('amod_module_basic');
         $model->where('project_name', '=', $project_name);
-        $model->whereIn('module_name',  $module_names);
+        if ($module_names) {
+            $model->whereIn('module_name', $module_names);
+        }
         return $model->get()->toArray();
     }
 }
