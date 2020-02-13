@@ -13,7 +13,7 @@ class DefaultWidget extends Widget
         $view['user_info'] = [
             "user_id" => 1,
             "user_name" => "user_1",
-            "head_pic" => "https://static-upload.local.com/amodvis/static/image/14/9c/ff/149cffa10522fed6855612a647924663.jpeg"
+            "head_pic" => "http://106.54.93.177:9091/amodvis/static/image/fd/83/05/fd8305e6d8cad189dc342aa8ac8aa5a3.jpeg"
         ];
         return $view;
     }
