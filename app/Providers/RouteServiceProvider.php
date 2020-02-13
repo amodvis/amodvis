@@ -37,6 +37,10 @@ class RouteServiceProvider extends ServiceProvider
     public function map()
     {
         $app_domain = request()->getHost();
+        $app_port = request()->getPort();
+        if (preg_match('/^[0-9\.]*$/', $app_domain)) {
+            $app_domain = $app_domain . ':' . $app_port;
+        }
         if (!$app_domain) {
             return true;
         }
