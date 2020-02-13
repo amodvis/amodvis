@@ -36,6 +36,12 @@ return [
         'https://www.amodvis.com',
         'https://app.amodvis.com',
         'https://admin.amodvis.com',
+
+        // http ip
+        'http://106.54.93.177:8088',
+        'http://106.54.93.177:8089',
+        'http://106.54.93.177:8090',
+        'http://106.54.93.177:8091',
     ],
     'react_base_url' => env('REACT_BASE_URL')
 ];
