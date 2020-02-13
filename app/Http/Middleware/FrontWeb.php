@@ -21,6 +21,11 @@ class FrontWeb
     public function handle(Request $request, Closure $next)
     {
         $app_domain = $request->getHost();
+        $app_port = request()->getPort();
+        if (preg_match('/^[0-9\.]*$/', $app_domain)) {
+            // IP访问
+            $app_domain = $app_domain . ':' . $app_port;
+        }
         $row = app(AppService::class)->getOneByDomain($app_domain);
         if (!empty($row)) {
             UtilsCommon::frameGlobalSet('vendor_id_by_domain', $row->user_id);
