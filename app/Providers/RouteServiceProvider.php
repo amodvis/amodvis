@@ -40,7 +40,8 @@ class RouteServiceProvider extends ServiceProvider
         $app_port = request()->getPort();
         $origin = false;
         if (preg_match('/^[0-9\.]*$/', $app_domain)) {
-            $app_domain = $app_domain . ':' . $app_port;
+            // IP访问
+            $app_domain = 'http://' . $app_domain . ':' . $app_port . '/';
             $origin = true;
         }
         if (!$app_domain) {
