@@ -11,10 +11,13 @@ class UtilsCommon
     static $module_mappding = [];
     static $frame_global_sets = [];
 
-    public static function getDomainByBaseUrl($base_url)
+    public static function getDomainByBaseUrl($base_url, $origin = false)
     {
         if (!$base_url) {
             return '';
+        }
+        if ($origin) {
+            return $base_url;
         }
         return (parse_url($base_url))['host'];
     }
