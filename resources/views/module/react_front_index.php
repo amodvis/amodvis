@@ -24,7 +24,6 @@
         window.pageApiData = <?php echo $page_api_data;?>;
         window.app_name_by_domain = '<?php echo $app_name_by_domain;?>';
         window.app_key = '<?php echo $app_info->app_key;?>';
-        window.vendor_id_by_domain = '<?php echo $vendor_id_by_domain;?>';
         window.shop_vendor_token = '<?php echo $shop_vendor_token;?>';
         window.moduleFetchUrl = '<?php echo config('common.module_fetch_url');?>';
         window.publicIceDistUrl = '<?php echo config('common.public_ice_dist_url');?>';
