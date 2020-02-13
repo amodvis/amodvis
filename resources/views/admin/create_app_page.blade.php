@@ -33,7 +33,7 @@
                 continue;
             }
         }
-        $app_domain = $app_info->app_domain ? 'https://' . $app_info->app_domain : $front_base_url;
+        $app_domain = $app_info->app_domain ? request()->getScheme() . '://' . $app_info->app_domain : $front_base_url;
         $page_link = $app_domain . '/' . str_replace('-', '/', trim($row->page_name, '/'));
         $tem_page_name = '/' . str_replace('-', '/', trim($row->page_name, '/'));
         $front_url = '';
