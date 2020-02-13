@@ -46,14 +46,14 @@ class RouteServiceProvider extends ServiceProvider
         if (!$app_domain) {
             return true;
         }
-        if ($app_domain === UtilsCommon::getDomainByBaseUrl(getOriginEnv('AMOD_API_BASE_URL', $origin))) {
+        if ($app_domain === UtilsCommon::getDomainByBaseUrl(getOriginEnv('AMOD_API_BASE_URL'), $origin)) {
             // 前台API
             $this->mapUserApiRoutes();
-        } elseif ($app_domain === UtilsCommon::getDomainByBaseUrl(getOriginEnv('AMOD_FRONT_BASE_URL', $origin)) ||
+        } elseif ($app_domain === UtilsCommon::getDomainByBaseUrl(getOriginEnv('AMOD_FRONT_BASE_URL'), $origin) ||
             true == $this->checkBindDomain($app_domain)) {
             // 前台WEB
             $this->mapUserWebRoutes();
-        } elseif ($app_domain === UtilsCommon::getDomainByBaseUrl(getOriginEnv('AMOD_CMS_BASE_URL', $origin))) {
+        } elseif ($app_domain === UtilsCommon::getDomainByBaseUrl(getOriginEnv('AMOD_CMS_BASE_URL'), $origin)) {
             // 商家API与CMS，WEB域名共用
             $this->mapVendorWebRoutes();
             $this->mapVendorApiRoutes();
