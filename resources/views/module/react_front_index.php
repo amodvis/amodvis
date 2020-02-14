@@ -18,6 +18,7 @@
     ';
     ?>
     <script>
+        window.isMobile = <?php echo isMobile() ? 'true' : 'false';?>
         window.debuglog = function(info){
             console.log(info);
         }
