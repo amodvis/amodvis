@@ -10,12 +10,6 @@ class DefaultWidget extends Widget
 
     public function run($view)
     {
-        $client = new \Predis\Client($servers, array('cluster' => 'redis'));
-
-        $client->set("name1", "11");
-        $client->set("name2", "22");
-        $client->set("name3", "33");
-
         $view['user_info'] = [
             "user_id" => 1,
             "user_name" => "user_1",
