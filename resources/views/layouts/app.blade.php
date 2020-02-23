@@ -5,6 +5,7 @@
     <title>@yield('title')</title>
     @yield('css')
     <style>
+        window.isMobile = <?php $is_mobile = isMobile(); echo $is_mobile ? 'true' : 'false';?>;
         .head, #page, .pagination_module, .foot {
             width: 1200px;
             margin: 0 auto;
