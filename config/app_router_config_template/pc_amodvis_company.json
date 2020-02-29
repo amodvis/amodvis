@@ -9,12 +9,16 @@
               "project_name": "amodvis_company",
               "module_name": "Header",
               "page_name": "index",
-              "position": 1,
+              "position": "1",
               "module_data": {
                 "logo_name": "AMODVIS"
               }
             }
           ]
+        },
+        {
+          "sub_min": [],
+          "sub_max": []
         }
       ],
       "bd": [
@@ -26,10 +30,26 @@
               "page_name": "index",
               "position": 1,
               "module_data": {
-                "text1": "PHP\u65b0\u624b\u5373\u53ef\u5feb\u901f\u5f00\u53d1",
-                "text2": "\u4e2d\u540e\u53f0 & \u8ba9\u524d\u7aef\u5f00\u53d1\u7b80\u5355\u800c\u53cb\u597d",
-                "btn_text": "\u5f00\u59cb\u4f7f\u7528",
-                "btn_link": "https://gitee.com/amodvis/amodvis"
+                "text1": "PHP新手即可快速开发",
+                "text2": "中后台 & 让前端开发简单且友好",
+                "btn_list": [
+                  {
+                    "text": "文档",
+                    "link": "/document/index"
+                  },
+                  {
+                    "text": "源码(Github)",
+                    "link": "https://github.com/amodvis/amodvis"
+                  },
+                  {
+                    "text": "源码(Gitee)",
+                    "link": "https://gitee.com/amodvis/amodvis"
+                  },
+                  {
+                    "text": null,
+                    "link": null
+                  }
+                ]
               }
             },
             {
@@ -47,24 +67,24 @@
               "module_data": {
                 "list": [
                   {
-                    "title": "\u57fa\u4e8e\u963f\u91cc\u5df4\u5df4\u5927\u4e2d\u53f0",
-                    "pic": "https://static-upload.amodvis.com/amodvis/static/image/1c/f6/20/1cf620520f54d4455cb739e063b261a0.png",
-                    "desc": "\u4e0d\u6b62\u5e97\u94fa\u88c5\u4fee"
+                    "title": "基于阿里巴巴大中台",
+                    "pic": "http://106.54.93.177:9091/amodvis/static/image/9e/56/26/9e5626f231e17953938351427f597ac6.png",
+                    "desc": "不止店铺装修"
                   },
                   {
-                    "title": "\u53ef\u89c6\u5316\u540e\u53f0\u63d0\u5347\u8fd0\u8425\u6548\u7387",
-                    "pic": "https://static-upload.amodvis.com/amodvis/static/image/b1/77/88/b17788ad9e8957a5f0e71ee0fce06d3f.png",
-                    "desc": "\u66f4\u52a0\u6e05\u6670\u7684\u53ef\u89c6\u5316\u64cd\u4f5c"
+                    "title": "可视化后台提升运营效率",
+                    "pic": "http://106.54.93.177:9091/amodvis/static/image/ff/3c/e0/ff3ce00f0e0718c30b2eb955274043c7.png",
+                    "desc": "更加清晰的可视化操作"
                   },
                   {
-                    "title": "\u652f\u6301\u540c\u6784",
-                    "pic": "https://static-upload.amodvis.com/amodvis/static/image/66/f8/5a/66f85afdc81206df0cdc159cf2f39e93.png",
-                    "desc": "\u652f\u6301\u4e00\u952e\u5f00\u542f"
+                    "title": "支持同构",
+                    "pic": "http://106.54.93.177:9091/amodvis/static/image/88/4e/4b/884e4b2f86feb9bd9518a8e7972a25bd.png",
+                    "desc": "支持一键开启"
                   },
                   {
-                    "title": "\u52a8\u6001\u521b\u5efa\u9875\u9762",
-                    "pic": "https://static-upload.amodvis.com/amodvis/static/image/aa/bc/46/aabc462d2adab35237c8a1dd78fb7e10.png",
-                    "desc": "\u53cb\u597d\u7684SEO"
+                    "title": "动态创建页面",
+                    "pic": "http://106.54.93.177:9091/amodvis/static/image/c9/b7/9d/c9b79dd60eebefb25d33bb5239ec54a6.png",
+                    "desc": "友好的SEO解决方案"
                   }
                 ]
               }
@@ -97,14 +117,449 @@
               "project_name": "amodvis_company",
               "module_name": "Footer",
               "page_name": "index",
-              "position": 1,
+              "position": "1",
               "module_data": []
             }
           ]
+        },
+        {
+          "sub_min": [],
+          "sub_max": []
         }
       ]
     },
     "is_pull_update": false,
+    "is_hide_page": false,
+    "is_pre_load": false,
+    "is_cdn_cache": false,
+    "is_user_auth": 1
+  },
+  {
+    "path": "/test",
+    "modules": {
+      "hd": [],
+      "bd": [
+        {
+          "main": []
+        },
+        {
+          "sub_min": [],
+          "sub_max": []
+        }
+      ],
+      "ft": [
+        {
+          "main": [
+            {
+              "project_name": "amodvis_company",
+              "module_name": "Footer",
+              "page_name": "test",
+              "position": "1",
+              "module_data": []
+            }
+          ]
+        },
+        {
+          "sub_min": [],
+          "sub_max": []
+        }
+      ]
+    },
+    "is_pull_update": true,
+    "is_hide_page": false,
+    "is_pre_load": false,
+    "is_cdn_cache": false,
+    "is_user_auth": 1
+  },
+  {
+    "path": "/document/index",
+    "modules": {
+      "hd": [
+        {
+          "main": [
+            {
+              "project_name": "amodvis_company",
+              "module_name": "Header",
+              "page_name": "index",
+              "position": "1",
+              "module_data": {
+                "logo_name": "AMODVIS"
+              }
+            }
+          ]
+        },
+        {
+          "sub_min": [],
+          "sub_max": []
+        }
+      ],
+      "bd": [
+        {
+          "main": [
+            {
+              "project_name": "amodvis_company",
+              "module_name": "Markdown",
+              "page_name": "document-index",
+              "position": "1",
+              "module_data": {
+                "markdown_text": "![amodvis](http://106.54.93.177:9090/public/images/markdown_doc/amodvis.png?raw=1)\r\n\r\n## 演示地址  [查看](http://106.54.93.177:8088/)\r\n\r\n## [简介](http://106.54.93.177:8091/document/intro#%E7%AE%80%E4%BB%8B)\r\n\r\n1. [关于Amodvis](http://106.54.93.177:8091/document/intro#%E5%85%B3%E4%BA%8Eamodvis)\r\n2. [Amodvis优势](http://106.54.93.177:8091/document/intro#amodvis%E4%BC%98%E5%8A%BF)\r\n3. [业务场景](http://106.54.93.177:8091/document/intro#%E4%B8%9A%E5%8A%A1%E5%9C%BA%E6%99%AF)\r\n\r\n## [开始](http://106.54.93.177:8091/document/start#%E5%BC%80%E5%A7%8B)\r\n\r\n1. [基础准备](http://106.54.93.177:8091/document/start#%E5%9F%BA%E7%A1%80%E5%87%86%E5%A4%87)\r\n\r\n2. [传统WEB架构 VS AMODVIS](http://106.54.93.177:8091/document/start#%E4%BC%A0%E7%BB%9F%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BBweb%E6%9E%B6%E6%9E%84-vs-amodvis)\r\n\r\n## [核心](http://106.54.93.177:8091/document/core#%E6%A0%B8%E5%BF%83)\r\n\r\n1. [项目,块,组件](http://106.54.93.177:8091/document/core#%E9%A1%B9%E7%9B%AE%E5%9D%97%E7%BB%84%E4%BB%B6)\r\n2. [布局](http://106.54.93.177:8091/document/core#%E5%B8%83%E5%B1%80)\r\n3. [后台的创建与前台数据获取](http://106.54.93.177:8091/document/core#%E5%90%8E%E5%8F%B0%E7%9A%84%E5%88%9B%E5%BB%BA%E4%B8%8E%E5%89%8D%E5%8F%B0%E6%95%B0%E6%8D%AE%E8%8E%B7%E5%8F%96)\r\n4. [后台组件](http://106.54.93.177:8091/document/core#%E5%90%8E%E5%8F%B0%E7%BB%84%E4%BB%B6)\r\n5. [代码发布](http://106.54.93.177:8091/document/core#%E4%BB%A3%E7%A0%81%E5%8F%91%E5%B8%83)\r\n6. 运营编辑\r\n\t1. 编辑模块\r\n\t2. 店铺发布\r\n\t3. 版本回退\r\n\t4. 备份\r\n\t5. 时光机穿梭\r\n7. [开发流程](http://106.54.93.177:8091/document/core#%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B)\r\n## [其他](http://106.54.93.177:8091/document/other#%E5%85%B6%E4%BB%96)\r\n1. [swoft高性能前台的架构](http://106.54.93.177:8091/document/other#1-swoft%E9%AB%98%E6%80%A7%E8%83%BD%E5%89%8D%E5%8F%B0%E7%9A%84%E6%9E%B6%E6%9E%84)\r\n2. nodejs跑前台同构\r\n3. [php v8js安装](http://106.54.93.177:8091/document/other#3-php-v8js%E5%AE%89%E8%A3%85)\r\n4. [devops-swoole解决上线与各环境测试问题](http://106.54.93.177:8091/document/other#4-devops-swoole%E8%A7%A3%E5%86%B3%E4%B8%8A%E7%BA%BF%E4%B8%8E%E5%90%84%E7%8E%AF%E5%A2%83%E6%B5%8B%E8%AF%95%E9%97%AE%E9%A2%98)\r\n\r\n# 简介\r\n\r\n## 关于Amodvis\r\n\\`\\`\\`\r\nAMODVIS是前后端分离的架构，前端使用淘宝的飞冰REACT框架，后端使用PHP LARAVEL框架。独创的开发模式，大大减轻REACT开发的难度，很容易上手开发带有可视化模块化的页面。在安装PHP V8JS扩展的情况可以打开同构渲染模式，SEO需求再也不用担心了。在未安装V8JS的情况下也可以完美的运行整套系统。对于浏览器兼容要求高的情况下也支持淘宝店铺的KISSY+PHP开发模块的模式。\r\n在业务上相比普通CMS，实现了独创的，一个支持翻页功能的列表混合着各种业务功能，每个功能的编辑后台都是点击弹出层的方式，并且后台都是不一样，可以按下拉列表筛选功能。每个功能的后台都是零编程，可以无限扩充业务功能。\r\n内置页面级的CDN缓存开关控制，基本没有访问量的压力。\r\n考虑到页面模块可能很多的情况，页面核心数据接口做了并发处理\r\n\\`\\`\\`\r\n\r\n\r\n>amodvis-react可单独使用，兼容ICE，相比ICE，配置更加方便，无需开发页面组件，无需封装页面数据获取，封装了block打包library命令。配合ec-amodvis项目，聚合了淘宝店铺装修与淘宝ICE所有优点，并在此基础上创新。\r\n\r\n[amodvis-react项目地址](https://github.com/amodvis/amodvis/blob/master/readme/amodvis-react.md) \r\n\r\n## Amodvis优势\r\n#### 1. 基于阿里巴巴大中台\r\n前端基于阿里巴巴大中台ICE，让前端开发简单而友好，海量可复用物料，搭配桌面工具极速构建前端应用\r\n#### 2. 前端完成所有功能\r\n前端基于后端开发的组件实现前端开发API的能力，无需对接，简单创建后台，组件内直接使用自己定义的字段\r\n#### 3. 可视化后台提升运营效率\r\n每个页面对应一个后端，鼠标移动到模块上方，弹出窗口的方式编辑模块的后台，保存后自动渲染当前模块\r\n#### 4. 同构\r\n实现用户第一次进入网站直接渲染HTML，后续点击跳转页面走react前端的渲染流程。加快了第一次渲染速度，同时对搜索引擎友好。\r\n#### 5. 后台动态创建页面\r\n页面是任意已有模块的组合，支持布局配置，前端无任何操作，无需打包上线\r\n#### 6. 安全发布\r\n模块编辑保存后并不会直接上线，有预览当前编辑的页面的功能，预览后可以考虑发布，发布后有问题可以立马回退上一个发布版本。另外还支持镜像当前状态，可随时切换历史镜像，满足运营人员多方面需求\r\n\r\n\r\n\r\n\r\n## 主页面\r\n\r\n#### 页面管理\r\n![页面管理](http://106.54.93.177:9090/public/images/markdown_doc/admin_home.png?raw=1)\r\n#### 活动与推荐位\r\n![活动与推荐位](http://106.54.93.177:9090/public/images/markdown_doc/活动与推荐位.png?raw=1)\r\n\r\n\r\n## 布局组件\r\n\r\n![布局组件](http://106.54.93.177:9090/public/images/markdown_doc/layout_edit.png?raw=1)\r\n\r\n## 其他后台组件\r\n\r\n![所有组件](http://106.54.93.177:9090/public/images/markdown_doc/all_component.png?raw=1)\r\n\r\n## 业务场景\r\n\r\n#### 常规页面实现\r\n> 可视化模块编辑\r\n![可视化模块编辑](http://106.54.93.177:9090/public/images/markdown_doc/模块编辑.png?raw=1)\r\n#### 活动实现\r\n> 全部活动\r\n![全部活动](http://106.54.93.177:9090/public/images/markdown_doc/模块编辑.png?raw=1)\r\n> 活动设置\r\n![活动设置](http://106.54.93.177:9090/public/images/markdown_doc/活动设置.png?raw=1)\r\n> 商品选择\r\n![商品选择](http://106.54.93.177:9090/public/images/markdown_doc/选择商品.png?raw=1)\r\n> 商品信息覆盖\r\n![商品信息覆盖](http://106.54.93.177:9090/public/images/markdown_doc/模块商品信息覆盖.png?raw=1)\r\n\r\n# 以上弹出后台都是基于目录amv/home_company配置出来的,无需开发,单独git仓库可以支持前端配置后台"
+              }
+            }
+          ]
+        },
+        {
+          "sub_min": [],
+          "sub_max": []
+        }
+      ],
+      "ft": [
+        {
+          "main": [
+            {
+              "project_name": "amodvis_company",
+              "module_name": "Footer",
+              "page_name": "index",
+              "position": "1",
+              "module_data": []
+            }
+          ]
+        },
+        {
+          "sub_min": [],
+          "sub_max": []
+        }
+      ]
+    },
+    "is_pull_update": true,
+    "is_hide_page": false,
+    "is_pre_load": false,
+    "is_cdn_cache": false,
+    "is_user_auth": 1
+  },
+  {
+    "path": "/document/intro",
+    "modules": {
+      "hd": [
+        {
+          "main": [
+            {
+              "project_name": "amodvis_company",
+              "module_name": "Header",
+              "page_name": "index",
+              "position": "1",
+              "module_data": {
+                "logo_name": "AMODVIS"
+              }
+            }
+          ]
+        },
+        {
+          "sub_min": [],
+          "sub_max": []
+        }
+      ],
+      "bd": [
+        {
+          "main": [
+            {
+              "project_name": "amodvis_company",
+              "module_name": "Markdown",
+              "page_name": "document-intro",
+              "position": "1",
+              "module_data": {
+                "markdown_text": "# 简介\r\n\r\n## 关于Amodvis\r\n\r\namodvis是由amodvis-react,amodvis-laravel组成的前后端解决方案，集成react同构，赋予前端生成组件后台的能力,无需对接模块API。\r\n\r\n## Amodvis优势\r\n#### 1. 基于阿里巴巴大中台\r\n前端基于阿里巴巴大中台ICE，让前端开发简单而友好，海量可复用物料，搭配桌面工具极速构建前端应用\r\n#### 2. 前端完成所有功能\r\n前端基于后端开发的组件实现前端开发API的能力，无需对接，简单创建后台，组件内直接使用自己定义的字段\r\n#### 3. 可视化后台提升运营效率\r\n每个页面对应一个后端，鼠标移动到模块上方，弹出窗口的方式编辑模块的后台，保存后自动渲染当前模块\r\n#### 4. 同构\r\n实现用户第一次进入网站直接渲染HTML，后续点击跳转页面走react前端的渲染流程。加快了第一次渲染速度，同时对搜索引擎友好。\r\n#### 5. 后台动态创建页面\r\n页面是任意已有模块的组合，支持布局配置，前端无任何操作，无需打包上线\r\n#### 6. 安全发布\r\n模块编辑保存后并不会直接上线，有预览当前编辑的页面的功能，预览后可以考虑发布，发布后有问题可以立马回退上一个发布版本。另外还支持镜像当前状态，可随时切换历史镜像，满足运营人员多方面需求\r\n\r\n## 所有后台组件\r\n\r\n![所有组件](http://106.54.93.177:9090/public/images/markdown_doc/all_component.png?raw=1)\r\n\r\n## 业务场景\r\n\r\n#### 常规页面实现\r\n> 可视化模块编辑\r\n![可视化模块编辑](http://106.54.93.177:9090/public/images/markdown_doc/模块编辑.png?raw=1)\r\n#### 活动实现\r\n> 全部活动\r\n![全部活动](http://106.54.93.177:9090/public/images/markdown_doc/模块编辑.png?raw=1)\r\n> 活动设置\r\n![活动设置](http://106.54.93.177:9090/public/images/markdown_doc/活动设置.png?raw=1)\r\n> 商品选择\r\n![商品选择](http://106.54.93.177:9090/public/images/markdown_doc/选择商品.png?raw=1)\r\n> 商品信息覆盖\r\n![商品信息覆盖](http://106.54.93.177:9090/public/images/markdown_doc/模块商品信息覆盖.png?raw=1)\r\n\r\n# 以上弹出后台都是基于目录amv/home_company配置出来的,无需开发,单独git仓库可以支持前端配置后台"
+              }
+            }
+          ]
+        },
+        {
+          "sub_min": [],
+          "sub_max": []
+        }
+      ],
+      "ft": [
+        {
+          "main": [
+            {
+              "project_name": "amodvis_company",
+              "module_name": "Footer",
+              "page_name": "index",
+              "position": "1",
+              "module_data": []
+            }
+          ]
+        },
+        {
+          "sub_min": [],
+          "sub_max": []
+        }
+      ]
+    },
+    "is_pull_update": true,
+    "is_hide_page": false,
+    "is_pre_load": false,
+    "is_cdn_cache": false,
+    "is_user_auth": 1
+  },
+  {
+    "path": "/document/start",
+    "modules": {
+      "hd": [
+        {
+          "main": [
+            {
+              "project_name": "amodvis_company",
+              "module_name": "Header",
+              "page_name": "index",
+              "position": "1",
+              "module_data": {
+                "logo_name": "AMODVIS"
+              }
+            }
+          ]
+        },
+        {
+          "sub_min": [],
+          "sub_max": []
+        }
+      ],
+      "bd": [
+        {
+          "main": [
+            {
+              "project_name": "amodvis_company",
+              "module_name": "Markdown",
+              "page_name": "document-start",
+              "position": "1",
+              "module_data": {
+                "markdown_text": "# 开始\r\n\r\n## 基础准备\r\n\r\n前端基于阿里巴巴ICE进行修改，可以基于ICE的物料进行开发。ICE优点正如官方所说，让前端开发简单而友好，如果对ICE不了解请参考https://ice.work/。\r\n\r\n1. 下载：https://ice.work/ GUI工具\r\n2. ice GUI -> 项目 -> 打开项目 -> amodvis-react\r\n3. php扩展依赖：能跑起laravel就能跑起amodvis，如果需要同构功能（第一次打开页面，服务端直接返回所有HTML，SEO友好），只需要安装v8js php扩展，安装后自动开启服务端同构功能，无需任何其他操作，amodvis-react单独前端部署（不强制要求运行在PHP环境下）也能跑起，只是无同构功能，建议走后端PHP运行模式，体验更好，SEO友好。\r\n\r\n![ICE](http://106.54.93.177:9090/public/images/markdown_doc/ice.png?raw=1)\r\n## 传统前后端分离WEB架构 VS AMODVIS\r\n#### 传统开发流程\r\n\r\n![OLD PROCESS](http://106.54.93.177:9090/public/images/markdown_doc/old_process.png?raw=1)\r\n\r\n#### Amovis开发流程\r\n\r\n![OLD PROCESS](http://106.54.93.177:9090/public/images/markdown_doc/new_process.png?raw=1)\r\n\r\n#### 开发流程对比\r\n整个过程后端的开发任务没有了;前端不需要对接接口，不需要等待后端开发;产品与UI不用花时间考虑如何设计后台，可以花更多的时间优化用户体验，设计更多的产品类型满足业务需求。\r\n\r\n###### 后端以后不需要开发吗？\r\n\r\n后端需要思考未来可能遇到的各种产品需求，提取共同属性，设计通用的组件满足产品需求。"
+              }
+            }
+          ]
+        },
+        {
+          "sub_min": [],
+          "sub_max": []
+        }
+      ],
+      "ft": [
+        {
+          "main": [
+            {
+              "project_name": "amodvis_company",
+              "module_name": "Footer",
+              "page_name": "index",
+              "position": "1",
+              "module_data": []
+            }
+          ]
+        },
+        {
+          "sub_min": [],
+          "sub_max": []
+        }
+      ]
+    },
+    "is_pull_update": true,
+    "is_hide_page": false,
+    "is_pre_load": false,
+    "is_cdn_cache": false,
+    "is_user_auth": 1
+  },
+  {
+    "path": "/document/core",
+    "modules": {
+      "hd": [
+        {
+          "main": [
+            {
+              "project_name": "amodvis_company",
+              "module_name": "Header",
+              "page_name": "index",
+              "position": "1",
+              "module_data": {
+                "logo_name": "AMODVIS"
+              }
+            }
+          ]
+        },
+        {
+          "sub_min": [],
+          "sub_max": []
+        }
+      ],
+      "bd": [
+        {
+          "main": [
+            {
+              "project_name": "amodvis_company",
+              "module_name": "Markdown",
+              "page_name": "document-core",
+              "position": "1",
+              "module_data": {
+                "markdown_text": "# 核心\r\n\r\n## 项目,块,组件\r\n\r\n1. 项目 是指一套完整系统特有的功能组合，由块构成\r\n\r\n2. 块 是在一套布局上完成独立功能的代码块，块由各个组件构成，对于react块也是继承Component，以下是一个页面的布局块配置，最终会解析为页面的html\r\n\r\n   1. ```\r\n      {\r\n            \"header\": [\r\n              {\r\n                \"main\": [\r\n                  {\r\n                    \"project_name\": \"home_company\",\r\n                    \"module_name\": \"AblityItems\",\r\n                    \"page_name\": \"index\",\r\n                    \"position\": 1\r\n                  },\r\n                  {\r\n                    \"project_name\": \"home_company\",\r\n                    \"module_name\": \"CardItems\",\r\n                    \"page_name\": \"index\",\r\n                    \"position\": 1\r\n                  }\r\n                ]\r\n              }\r\n            ],\r\n            \"content\": [\r\n              {\r\n                \"main\": [\r\n                  {\r\n                    \"project_name\": \"project1\",\r\n                    \"module_name\": \"ModuleOne\",\r\n                    \"page_name\": \"index\",\r\n                    \"position\": 1\r\n                  }\r\n                ]\r\n              },\r\n              {\r\n                \"sub_min\": [\r\n                  {\r\n                    \"project_name\": \"project2\",\r\n                    \"module_name\": \"ModuleTwo\",\r\n                    \"page_name\": \"index\",\r\n                    \"position\": 1\r\n                  }\r\n                ],\r\n                \"sub_max\": [\r\n                  {\r\n                    \"project_name\": \"project2\",\r\n                    \"module_name\": \"ModuleTwo\",\r\n                    \"page_name\": \"index\",\r\n                    \"position\": 2\r\n                  }\r\n                ]\r\n              }\r\n            ],\r\n            \"foot\":[\r\n            \t{\r\n                \"main\": [\r\n                  {\r\n                    \"project_name\": \"project1\",\r\n                    \"module_name\": \"ModuleOne\",\r\n                    \"page_name\": \"index\",\r\n                    \"position\": 3\r\n                  }\r\n                ]\r\n               }\r\n            ]\r\n          }\r\n      ```\r\n     2. ```\r\n      <div id=\"page\">\r\n      \t\t<div id=\"content\">\r\n      \t\t\t <div class=\"hd\">\r\n      \t\t\t     块1\r\n      \t\t\t     块2\r\n      \t\t\t </div>\r\n      \t\t   <div class=\"bd\">\r\n      \t\t   \t\t块1\r\n      \t\t   \t\t块2\r\n      \t\t   </div>\r\n      \t\t   <div class=\"ft\">\r\n      \t\t   \t\t块1\r\n      \t\t   \t\t块2\r\n      \t\t   </div>\r\n      \t\t</div>\r\n      </div>\r\n     ```\r\n\r\n      \r\n\r\n3. 组件，严格上说继承Component都算组件，为了更好的理解业务，这里定义非块且继承Component为组件\r\n\r\n## 布局\r\n\r\n\"参考 项目,块,组件\"中块部分\r\n\r\n## 后台的创建与前台数据获取\r\n\r\namv/home_company里面有很多例子，[ec-amodvis](https://github.com/amodvis/amodvis/tree/master)/[amv](https://github.com/amodvis/amodvis/tree/master/amv)/[home_company](https://github.com/amodvis/amodvis/tree/master/amv/home_company)/**CardItems**/目录有两个文件，module.xml，product_module.xml，module.xml是当前模块弹出的第一个后台，product_module.xml是module.xml中item组件弹出的已选择的商品的设置按钮的后台\r\n\r\n\r\n> module.xml对应界面\r\n![活动设置](http://106.54.93.177:9090/public/images/markdown_doc/%E6%B4%BB%E5%8A%A8%E8%AE%BE%E7%BD%AE.png?token=ALTKMNMW7XUV4GHGO45DI2S46ZB54)\r\n> module.xml中formType=\"item\"商品选择组件\r\n![商品选择](http://106.54.93.177:9090/public/images/markdown_doc/%E9%80%89%E6%8B%A9%E5%95%86%E5%93%81.png?token=ALTKMNIBY4UYBL5HGCG7S4K46ZCFG)\r\n> product_module.xml商品选择组件已选择中设置按钮弹出的界面\r\n![商品信息覆盖](http://106.54.93.177:9090/public/images/markdown_doc/%E6%A8%A1%E5%9D%97%E5%95%86%E5%93%81%E4%BF%A1%E6%81%AF%E8%A6%86%E7%9B%96.png?token=ALTKMNLPKEM5Z72XVFRFQT246ZCJY)\r\n\r\n## 后台组件\r\n\r\n后台组件主要用于生产表单界面，节省手动编写HTML时间，可支持到新增与更新无编码的程度，组件定义在App\\Classes\\Services\\Module::xmlTable\r\n\r\n## 代码发布\r\n\r\n前台build参考 [链接](https://github.com/amodvis/amodvis/blob/master/readme/amodvis-react.md)\r\n\r\n后台依赖前端的模板库，所以每次上线需要把模板打包成库文件ice build library:true，把生成的库文件\r\n\r\n放入后端代码可直接访问的路径，并且在amodvis-laravel的入口文件index.php定义REACT库文件路径REACT_BASE_URL，npm run build:all_local会生成REACT_BASE_URL中的代码，后台依赖react-bundle.min.js，react-bundle.min.js主要包含React核心与ReactDOMServer，你也可以参考https://reactjs.org/docs/add-react-to-a-website.html。\r\n\r\n## 开发流程\r\n\r\n1. 开发REACT块并在router_config.json mock模块数据，模块数据放在module_data\r\n\r\n2. 开发REACT块\r\n\r\n3. 执行npm run build:all_local,由于每个人的目录不一样，请参考front_public项目的目录laravle-amodvis/ice_dist，提交front_public到远程，并更新开发机front_public项目代码目录\r\n\r\n4. 在amodvis-laravel项目的amv目录创建你的项目与模块xml文件，参考 [链接](https://github.com/amodvis/amodvis/tree/master/amv)，全部后端组件参考[链接](https://github.com/amodvis/amodvis/blob/master/amvphp/uploadzone/top_part/module.xml)\r\n\r\n5. 找到页面管理，编辑页面，通过可视化后台为模块创建后台数据\r\n\r\n6. 页面管理，预览前端可以看到最终的效果\r\n\r\n> 开发过程可能遇到报错，很多情况是模块字段未填充导致，可以在打包的时候ice命令加--debug，默认的npm run build:all_local已经开启，这样可以看更详细的出错信息"
+              }
+            }
+          ]
+        },
+        {
+          "sub_min": [],
+          "sub_max": []
+        }
+      ],
+      "ft": [
+        {
+          "main": [
+            {
+              "project_name": "amodvis_company",
+              "module_name": "Footer",
+              "page_name": "index",
+              "position": "1",
+              "module_data": []
+            }
+          ]
+        },
+        {
+          "sub_min": [],
+          "sub_max": []
+        }
+      ]
+    },
+    "is_pull_update": true,
+    "is_hide_page": false,
+    "is_pre_load": false,
+    "is_cdn_cache": false,
+    "is_user_auth": 1
+  },
+  {
+    "path": "/document/other",
+    "modules": {
+      "hd": [
+        {
+          "main": [
+            {
+              "project_name": "amodvis_company",
+              "module_name": "Header",
+              "page_name": "index",
+              "position": "1",
+              "module_data": {
+                "logo_name": "AMODVIS"
+              }
+            }
+          ]
+        },
+        {
+          "sub_min": [],
+          "sub_max": []
+        }
+      ],
+      "bd": [
+        {
+          "main": [
+            {
+              "project_name": "amodvis_company",
+              "module_name": "Markdown",
+              "page_name": "document-other",
+              "position": "1",
+              "module_data": {
+                "markdown_text": "# 其他\r\n\r\n## 1. swoft高性能前台的架构\r\n\r\n由于页面的各个功能拆分成粒度更小的模块组件，原本可以抽取页面共同信息，单独请求一次底层服务，现在变成了每个模块获取信息独立，对服务器压力造成一定压力，底层已经通过前端请求接口带了is_advance判断是否在后端获取模块数据的时候进行并发处理，未来可以做成智能化自动调整该参数实现最快的响应速度。服务接口并发请求大必然要求服务器要有更高的性能应对，swoft是基于swoole开发的事件驱动，无阻塞协程处理的php框架，性能媲美go语言，有兴趣可以将各个API迁移到swoft框架上，这也是amodvis未来要做的事情。\r\n\r\n## 2. nodejs跑前台同构\r\n\r\n\r\n## 3. php v8js安装\r\n\r\namodvis-react可以在PHP环境运行，只需安装php v8js扩展即可让react library在后端允许，即使没有使用，php也能让react library在浏览器中允许。只能前台不能实现同构功能，后台就不需要同构了。\r\n\r\nv8安装：https://github.com/v8/v8\r\n\r\nphp v8js扩展安装：https://github.com/phpv8/v8js\r\n\r\n## 4. devops-swoole解决上线与各环境测试问题\r\n\r\n为了让前端不搭建PHP环境的情况下，快速配置模块后台体验效果，devops-swoole采用两种方式同步代码\r\n\r\n1. 基于rsync同步本地代码带dev，支持windows linux mac\r\n\r\n2. 基于git提交,web界面手动更新\r\n\r\n以上两种方式开发的代码都在各自独立的环境运行，各开发之间互不干扰。待DEV机器到位，会公布地址。"
+              }
+            }
+          ]
+        },
+        {
+          "sub_min": [],
+          "sub_max": []
+        }
+      ],
+      "ft": [
+        {
+          "main": [
+            {
+              "project_name": "amodvis_company",
+              "module_name": "Footer",
+              "page_name": "index",
+              "position": "1",
+              "module_data": []
+            }
+          ]
+        },
+        {
+          "sub_min": [],
+          "sub_max": []
+        }
+      ]
+    },
+    "is_pull_update": true,
+    "is_hide_page": false,
+    "is_pre_load": false,
+    "is_cdn_cache": false,
+    "is_user_auth": 1
+  },
+  {
+    "path": "/web_im",
+    "modules": {
+      "hd": [
+        {
+          "main": [
+            {
+              "project_name": "amodvis_company",
+              "module_name": "Header",
+              "page_name": "index",
+              "position": "1",
+              "module_data": {
+                "logo_name": "AMODVIS"
+              }
+            }
+          ]
+        },
+        {
+          "sub_min": [],
+          "sub_max": []
+        }
+      ],
+      "bd": [
+        {
+          "main": [
+            {
+              "project_name": "amodvis_company",
+              "module_name": "Chat",
+              "page_name": "web_im",
+              "position": "1",
+              "module_data": {
+                "user_info": {
+                  "user_id": 1,
+                  "user_name": "user_1",
+                  "head_pic": "http://106.54.93.177:9091/amodvis/static/image/fd/83/05/fd8305e6d8cad189dc342aa8ac8aa5a3.jpeg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "sub_min": [],
+          "sub_max": []
+        }
+      ],
+      "ft": [
+        {
+          "main": [
+            {
+              "project_name": "amodvis_company",
+              "module_name": "Footer",
+              "page_name": "index",
+              "position": "1",
+              "module_data": []
+            }
+          ]
+        },
+        {
+          "sub_min": [],
+          "sub_max": []
+        }
+      ]
+    },
+    "is_pull_update": true,
     "is_hide_page": false,
     "is_pre_load": false,
     "is_cdn_cache": false,
