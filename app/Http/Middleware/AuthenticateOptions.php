@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use App;
 use Illuminate\Http\Request;
 
 class AuthenticateOptions
@@ -16,8 +17,13 @@ class AuthenticateOptions
         $allow_list = explode(',', $allow_list);
         $origin = $request->header('origin');
         $config_options = config('common.allow_options_base_urls', []);
-        if (in_array($origin, $allow_list) || in_array($origin, $config_options)) {
+        if (App::environment(PROD)) {
+            if (in_array($origin, $allow_list) || in_array($origin, $config_options)) {
+                app('app.response')->header('Access-Control-Allow-Origin', $origin);
+            }
+        } else {
             app('app.response')->header('Access-Control-Allow-Origin', $origin);
+
         }
         app('app.response')->header('Access-Control-Allow-Credentials', 'true');
         app('app.response')->header('Access-Control-Allow-Methods', 'POST,GET,OPTIONS');

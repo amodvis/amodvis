@@ -82,6 +82,7 @@ class RouteServiceProvider extends ServiceProvider
             '01infinity-mall.hktester.com',
             '01infinity-mall.hk01.com',
             'www.amodvis.com',
+            'www.local.com',
             'http://106.54.93.177:8091/'
         ];
         if (in_array($domain, $bindDomain)) {

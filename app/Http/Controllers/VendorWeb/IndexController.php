@@ -148,6 +148,9 @@ class IndexController extends Controller
     public function appModuleList(Request $request, $app_name, $module_name = '')
     {
         $user_id = $request->input('login_vendor_id');
+        // 获取APP信息
+        $app_info = app(AppService::class)->getOne($user_id, $app_name);
+        $view['app_info'] = $app_info;
         $module_options['module_name'] = $module_name;
         $view['admin'] = true;
         $view['design'] = true;
@@ -165,6 +168,9 @@ class IndexController extends Controller
         $page = $request->input('page', 1);
         $page_size = 20;
         $user_id = $request->input('login_vendor_id');
+        // 获取APP信息
+        $app_info = app(AppService::class)->getOne($user_id, $app_name);
+        $view['app_info'] = $app_info;
         $module_options['module_name'] = $module_name;
         $module_service = app(ModuleService::class);
         $module_name_list = [];

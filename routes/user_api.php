@@ -12,9 +12,6 @@ Route::group(['middleware' => ['only_filter_and_options']], function () use ($mo
     Route::any('/user/login/sso', 'LoginController@userLogin');
 });
 Route::group(['middleware' => ['user_api_not_force_auth']], function () use ($module_unique, $module_unique_path, $letter_num) {
-    Route::get('/module_api/get_item_open/' . $module_unique_path, 'CoreModule\IndexController@getItem')->where(
-        array_merge($module_unique, [])
-    );
     Route::get('/tool/get_app_router_config', 'ToolsController@getRouterConfig');
     Route::any('/module_api/index/get_modules_data/{app_name?}', 'CoreModule\IndexController@getModulesData')->where(
         ['app_name' => $letter_num]

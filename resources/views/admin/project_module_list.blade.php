@@ -41,6 +41,9 @@
     echo '<table class="fashiontable">';
     echo '<tr><th width="15%">project_name</th><th width="20%">module_name</th><th width="25%">page_name</th><th width="10%">position</th><th width="30%">操作</th></tr>';
     foreach ($page_list['data'] as $row) {
+
+        $app_domain = $app_info->app_domain ? request()->getScheme() . '://' . $app_info->app_domain : $front_base_url;
+
         $setting_html = '
 <div class="table_list_btns">
 <span style="min-height:auto;" class="J_TModule J_TEmptyBox" data_module_no_reload=1 data-dir="' . $row->project_name_v . '" data-page="' . $row->page_name . '"
@@ -48,7 +51,7 @@ moduleid="' . $row->module_name . '" data-position="' . $row->position . '" data
 <a class="ds-bar-edit" href="javascript:void(0);"><span>设置</span></a>
 </span>
 <a target="_blank" href="/get_item/' . $app_name . '/' . $row->project_name_v . '/' . $row->module_name . '/' . $row->page_name . '/' . $row->position . '?admin=1&design=1">可视化</a>
-<a target="_blank" href="' . getOriginEnv('AMOD_API_BASE_URL') . 'api/module_api/get_item_open/' . $app_name . '/' . $row->project_name_v . '/' . $row->module_name . '/' . $row->page_name . '/' . $row->position . '">插入API</a>
+<a target="_blank" href="' . $app_domain . '/module_api/get_item_open/' . $app_name . '/' . $row->project_name_v . '/' . $row->module_name . '/' . $row->page_name . '/' . $row->position . '.js">复制URL引入JS</a>
 <a target="_blank" href="' . getOriginEnv('AMOD_API_BASE_URL') . 'api/module_api/index/get_one_module_data/' . $app_name . '/' . $row->project_name_v . '/' . $row->module_name . '/' . $row->page_name . '/' . $row->position . '">获取基础API</a>
 <a target="_blank" href="' . getOriginEnv('AMOD_API_BASE_URL') . 'api/module_api/index/get_one_module_product_by_page/' . $app_name . '/' . $row->project_name_v . '/' . $row->module_name . '/' . $row->page_name . '/' . $row->position . '">获取商品翻页API</a>
 </div></div>

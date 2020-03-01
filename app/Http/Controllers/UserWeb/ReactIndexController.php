@@ -16,6 +16,58 @@ use Illuminate\Support\Facades\Redis;
 
 class ReactIndexController extends Controller
 {
+
+    /**
+     * 返回具体小部件的html代码 默认不包括CSS，JS与html，body标签
+     * @param Request $request
+     * @param $app_name
+     * @param $project_name
+     * @param $module_name
+     * @param $page_name
+     * @param $position
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function getItem(Request $request, $app_name, $project_name, $module_name, $page_name, $position)
+    {
+        $design = $request->input('design') ? true : false;
+        $admin = $request->input('admin') ? true : false;
+        $class_name = '\\Amv\\' . $project_name . '\\' . $module_name . '\\DefaultWidget';
+        $options = $request->input('options');
+        $options = json_decode($options, true) ?: [];
+        $view['class_name'] = $class_name;
+        $view['options'] = $options;
+        $view['app_name'] = $app_name;
+        $view['project_name'] = $project_name;
+        $view['page_name'] = $page_name;
+        $view['position'] = $position;
+        $view['module_name'] = $module_name;
+        $view['design'] = $design;
+        $view['admin'] = $admin;
+        $view['page_location'] = '/';
+        $json_item = [
+            'project_name' => $project_name,
+            'module_name' => $module_name,
+            'page_name' => $page_name,
+            'position' => $position,
+        ];
+        $vendor_id_by_domain = $request->input('vendor_id_by_domain');
+        $module_data = \App\Classes\Widget\Widget::widget($vendor_id_by_domain, $app_name, $json_item);
+        $json_item['module_data'] = $module_data;
+        $view['json_item'] = $json_item;
+        // cache vendor app 防止每次刷新变化 导致CDN缓存失效
+        $vendor_id_app_name_key = 'Auth:' . $vendor_id_by_domain . '--' . $app_name;
+        $vendor_id_app_name = \RedisF::get($vendor_id_app_name_key);
+        if (!$vendor_id_app_name) {
+            $shop_vendor_token = HttpAuth::getAmodAppVendorAuth($vendor_id_by_domain, $app_name);
+            \RedisF::setex($vendor_id_app_name_key, 3600, $shop_vendor_token);
+        } else {
+            $shop_vendor_token = $vendor_id_app_name;
+        }
+        $view['shop_vendor_token'] = $shop_vendor_token;
+        $response = app('app.response');
+        return response(view('module/get_item_react_open', $view))->withHeaders($response->getHeaders());
+    }
+
     /**
      * 默认首页对应的页面page_name index
      * @param Request $request
@@ -142,8 +194,6 @@ class ReactIndexController extends Controller
             $shop_vendor_token = $vendor_id_app_name;
         }
         $view['shop_vendor_token'] = $shop_vendor_token;
-        // todo remove
-        $view['vendor_id_by_domain'] = $view['shop_vendor_token'];
         return view('module/react_front_index', $view);
     }
 

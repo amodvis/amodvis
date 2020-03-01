@@ -15,9 +15,6 @@ Route::group(['middleware' => ['vendor_web_force_auth']], function () use (
         'CoreModule\IndexController@getProductModuleEditHtml')->where(
         array_merge($module_unique, ['product_id' => '[0-9]+', 'trigger_name' => $letter_num, 'module_type_name' => $letter_num])
     );
-    Route::get('/get_item/' . $module_unique_path, 'Module\ReactIndexController@getItem')->where(
-        array_merge($module_unique, [])
-    );
     Route::get('/page_builder/{app_name}/{page_name}', 'Module\ReactIndexController@pageBuilder')->where(
         ['app_name' => $letter_num, 'page_name' => $page_name_verify]
     );
