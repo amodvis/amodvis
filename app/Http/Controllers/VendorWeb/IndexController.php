@@ -185,6 +185,7 @@ class IndexController extends Controller
         $view['project_name'] = $project_name;
         $view['module_name_list'] = $module_list;
         $view['login_vendor_id'] = $user_id;
+        $view['front_base_url'] = getOriginEnv('AMOD_FRONT_BASE_URL');
         $app_info = app(AppService::class)->getOne($user_id, $app_name);
         $view['title'] = (empty($app_info->app_name_cn) ? $app_info->app_name : $app_info->app_name_cn) . '活动管理';
         $view['shop_vendor_token'] = HttpAuth::getAmodAppVendorAuth($user_id, $app_name);
