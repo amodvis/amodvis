@@ -6,17 +6,43 @@ class XmlModuleService
 {
     public static $textIndex = 0;
 
+
+    /**
+     * 降低数组纬度 兼容html name （表单的name必须遵循数组规范）
+     * @param $array
+     * @param array $newArray
+     * @param string $keyString
+     * @param int $latitude
+     * @return array
+     */
+    private function lowerHtmlArrayKey($array,&$newArray = [],$keyString = "",$latitude = 0)
+    {
+
+        $stepKeyString = $keyString;
+        foreach ($array as $key=>$value){
+
+            if($latitude == 0){
+                $keyString = $key;
+            }else{
+                $keyString = $stepKeyString. "[{$key}]";
+            }
+
+            if(is_array($value) || is_object($value)){
+                $this->lowerHtmlArrayKey($value,$newArray,$keyString,$latitude+1);
+            }else{
+                $newArray[$keyString] = $value;
+            }
+
+        }
+
+        return $newArray;
+    }
+
     private function evalFormItem($node_value, $data, $form_name_str)
     {
+        $data = $this->lowerHtmlArrayKey($data);
         if (isset($data[$form_name_str])) {
             $node_value = $data[$form_name_str];
-        } elseif (preg_match('/([a-zA-Z0-9_]+)(\[[0-9]+\])\[([0-9-a-zA-Z_]+)\]/', $form_name_str, $match)) {
-            eval('$node_value = $data[\'' . $match[1] . '\']' . $match[2] . '[\'' . $match[3] . '\']??\'\';');
-        } elseif (preg_match('/([a-zA-Z0-9_]+)\[([a-zA-Z_]+[0-9-a-zA-Z_]+)\]/', $form_name_str, $match)) {
-            eval('$node_value = $data[\'' . $match[1] . '\'][\'' . $match[2] . '\']??\'\';');
-        } elseif (preg_match('/([a-zA-Z0-9_]+)\[\]/', $form_name_str, $match)) {
-            $node_value = $data[$match[1]][self::$textIndex] ?? '';
-            self::$textIndex++;
         }
         return $node_value;
     }

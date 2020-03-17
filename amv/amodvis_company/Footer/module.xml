@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf8"?>
+<module>
+    <parameters>
+        <group title="第一列">
+            <section title="抬头标题" folded="false">
+            <param description="^_^" formType="text" label="标题" name='line[0][text]' ptype="text"
+                   readonly="false"></param>
+            </section>
+            <section title="按钮一" folded="false">
+                <param description="^_^" formType="text" label="按钮文字" name='line[0][btn_list][0][text]' ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="按钮链接" name='line[0][btn_list][0][link]' ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="按钮二" folded="false">
+                <param description="^_^" formType="text" label="按钮文字" name='line[0][btn_list][1][text]' ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="按钮链接" name='line[0][btn_list][1][link]' ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="按钮三" folded="false">
+                <param description="^_^" formType="text" label="按钮文字" name='line[0][btn_list][2][text]' ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="按钮链接" name='line[0][btn_list][2][link]' ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="按钮四" folded="false">
+                <param description="^_^" formType="text" label="按钮文字" name='line[0][btn_list][3][text]' ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="按钮链接" name='line[0][btn_list][3][link]' ptype="text"
+                       readonly="false"></param>
+            </section>
+        </group>
+
+        <group title="第二列">
+            <section title="抬头标题" folded="false">
+                <param description="^_^" formType="text" label="标题" name='line[1][text]' ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="按钮一" folded="false">
+                <param description="^_^" formType="text" label="按钮文字" name='line[1][btn_list][0][text]' ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="按钮链接" name='line[1][btn_list][0][link]' ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="按钮二" folded="false">
+                <param description="^_^" formType="text" label="按钮文字" name='line[1][btn_list][1][text]' ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="按钮链接" name='line[1][btn_list][1][link]' ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="按钮三" folded="false">
+                <param description="^_^" formType="text" label="按钮文字" name='line[1][btn_list][2][text]' ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="按钮链接" name='line[1][btn_list][2][link]' ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="按钮四" folded="false">
+                <param description="^_^" formType="text" label="按钮文字" name='line[1][btn_list][3][text]' ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="按钮链接" name='line[1][btn_list][3][link]' ptype="text"
+                       readonly="false"></param>
+            </section>
+        </group>
+
+        <group title="第三列">
+            <section title="抬头标题" folded="false">
+                <param description="^_^" formType="text" label="标题" name='line[2][text]' ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="image" label="图片" name="line[2][pic]" ptype="text"
+                       readonly="false"></param>
+            </section>
+        </group>
+
+        <group title="版权描述">
+            <section title="文本" folded="false">
+                <param description="^_^" formType="text" label="第一行文字" name='text1' ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="第二行文字" name='text2' ptype="text"
+                       readonly="false"></param>
+                <param description="^_^" formType="text" label="第三行文字" name='text3' ptype="text"
+                       readonly="false"></param>
+            </section>
+        </group>
+
+    </parameters>
+</module>
