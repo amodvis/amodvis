@@ -15,4 +15,4 @@ yarn-error.log
 /yarn.lock
 .vscode
 .phpstorm.meta.php
-public/*
+public/version.txt
