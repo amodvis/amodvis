@@ -17,7 +17,9 @@
         </div>
         <div class="module_one_setup_items">
             <ul>
-                <li class="form-default"><span>模块</span><select class="input-box J_AddModuleName">
+                <li class="form-default" style="display: <?php if ($module_name) {
+                    echo 'none';
+                }?>"><span>模块</span><select class="input-box J_AddModuleName">
                         <?php
                         $i = 1;
                         foreach ($module_name_list as $item) {

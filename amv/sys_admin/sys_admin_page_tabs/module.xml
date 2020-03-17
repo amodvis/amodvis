@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf8"?>
+<module>
+    <parameters>
+        <group title="">
+            <section title="" folded="false">
+                <param description="^_^" formType="radio" label="模板選擇" name="from_template" ptype="text"
+                       readonly="true">
+                    <option value="mobile_test">测试模板MOBILE</option>
+                    <option value="pc_test">测试模板PC</option>
+                    <option value="pc_amodvis_company">AMODVIS官网PC</option>
+                </param>
+            </section>
+            <section title="第一组" folded="false">
+                <param description="" formType="text" label="文字" name='router[0][text]' ptype="text"
+                       readonly="false"></param>
+                <param description="" formType="text" label="链接" name='router[0][link]' ptype="text"
+                       readonly="false"></param>
+                <param description="" formType="text" label="背景图" name='router[0][pic]' ptype="text"
+                       readonly="false"></param>
+                <param description="" formType="text" label="选中背景图" name='router[0][checked_url]' ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="第二组" folded="false">
+                <param description="" formType="text" label="文字" name='router[1][text]' ptype="text"
+                       readonly="false"></param>
+                <param description="" formType="text" label="链接" name='router[1][link]' ptype="text"
+                       readonly="false"></param>
+                <param description="" formType="text" label="背景图" name='router[1][pic]' ptype="text"
+                       readonly="false"></param>
+                <param description="" formType="text" label="选中背景图" name='router[1][checked_url]' ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="第三组" folded="false">
+                <param description="" formType="text" label="文字" name='router[2][text]' ptype="text"
+                       readonly="false"></param>
+                <param description="" formType="text" label="链接" name='router[2][link]' ptype="text"
+                       readonly="false"></param>
+                <param description="" formType="text" label="背景图" name='router[2][pic]' ptype="text"
+                       readonly="false"></param>
+                <param description="" formType="text" label="选中背景图" name='router[2][checked_url]' ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="第四组" folded="false">
+                <param description="" formType="text" label="文字" name='router[3][text]' ptype="text"
+                       readonly="false"></param>
+                <param description="" formType="text" label="链接" name='router[3][link]' ptype="text"
+                       readonly="false"></param>
+                <param description="" formType="text" label="背景图" name='router[3][pic]' ptype="text"
+                       readonly="false"></param>
+                <param description="" formType="text" label="选中背景图" name='router[3][checked_url]' ptype="text"
+                       readonly="false"></param>
+            </section>
+            <section title="第五组" folded="false">
+                <param description="" formType="text" label="文字" name='router[4][text]' ptype="text"
+                       readonly="false"></param>
+                <param description="" formType="text" label="链接" name='router[4][link]' ptype="text"
+                       readonly="false"></param>
+                <param description="" formType="text" label="背景图" name='router[4][pic]' ptype="text"
+                       readonly="false"></param>
+                <param description="" formType="text" label="选中背景图" name='router[4][checked_url]' ptype="text"
+                       readonly="false"></param>
+            </section>
+        </group>
+    </parameters>
+</module>

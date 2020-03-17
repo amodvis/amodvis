@@ -21,6 +21,7 @@ class XmlModuleService
         return $node_value;
     }
 
+
     private function radioComponent($item, $form_html_str, $data, $name)
     {
         $form_html_str .= '<!-- 组件按钮样式开始-->';

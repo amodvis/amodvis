@@ -183,6 +183,7 @@ class IndexController extends Controller
         $view['design'] = true;
         $view['app_name'] = $app_name;
         $view['project_name'] = $project_name;
+        $view['module_name'] = $module_name;
         $view['module_name_list'] = $module_list;
         $view['login_vendor_id'] = $user_id;
         $app_info = app(AppService::class)->getOne($user_id, $app_name);
