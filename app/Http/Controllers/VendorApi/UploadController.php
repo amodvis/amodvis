@@ -260,6 +260,7 @@ class UploadController extends Controller
         } else {
             return $this->alert('未知的上传组件');
         }
+        var_dump($_SERVER);
         $is_to_remote = getOriginEnv('IS_UPLOAD_TO_REMOTE');
         if ($is_to_remote) {
             try {
@@ -273,6 +274,7 @@ class UploadController extends Controller
                 $res['url'] = $url;
                 $res['path'] = $path;
             } catch (\Exception $e) {
+                var_dump($e->getMessage());
                 FluentLogger::error('common', ['message' => $e->getMessage(), 'file' => $e->getFile(),
                     'line' => $e->getLine()]);
             }

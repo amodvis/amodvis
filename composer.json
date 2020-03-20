@@ -12,7 +12,8 @@
     "amodvis/laravel_basic_dev": "dev-master",
     "amodvis/amodvis_system": "^1.0.1",
     "doctrine/dbal": "v2.4.2",
-    "predis/predis": "^1.1"
+    "predis/predis": "^1.1",
+    "aliyuncs/oss-sdk-php": "~2.0"
   },
   "repositories": {
     "packagist": {
