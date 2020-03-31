@@ -37,6 +37,8 @@ return [
         'https://app.amodvis.com',
         'https://admin.amodvis.com',
 
+        'http://www.amodvis.com',
+
         // http ip
         'http://106.54.93.177:8088',
         'http://106.54.93.177:8089',

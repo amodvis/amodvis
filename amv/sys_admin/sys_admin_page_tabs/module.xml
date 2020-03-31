@@ -15,9 +15,9 @@
                        readonly="false"></param>
                 <param description="" formType="text" label="链接" name='router[0][link]' ptype="text"
                        readonly="false"></param>
-                <param description="" formType="text" label="背景图" name='router[0][pic]' ptype="text"
+                <param description="" formType="text" label="背景图" name='router[0][image]' ptype="text"
                        readonly="false"></param>
-                <param description="" formType="text" label="选中背景图" name='router[0][checked_url]' ptype="text"
+                <param description="" formType="text" label="选中背景图" name='router[0][checked_image]' ptype="text"
                        readonly="false"></param>
             </section>
             <section title="第二组" folded="false">
@@ -25,9 +25,9 @@
                        readonly="false"></param>
                 <param description="" formType="text" label="链接" name='router[1][link]' ptype="text"
                        readonly="false"></param>
-                <param description="" formType="text" label="背景图" name='router[1][pic]' ptype="text"
+                <param description="" formType="text" label="背景图" name='router[1][image]' ptype="text"
                        readonly="false"></param>
-                <param description="" formType="text" label="选中背景图" name='router[1][checked_url]' ptype="text"
+                <param description="" formType="text" label="选中背景图" name='router[1][checked_image]' ptype="text"
                        readonly="false"></param>
             </section>
             <section title="第三组" folded="false">
@@ -35,9 +35,9 @@
                        readonly="false"></param>
                 <param description="" formType="text" label="链接" name='router[2][link]' ptype="text"
                        readonly="false"></param>
-                <param description="" formType="text" label="背景图" name='router[2][pic]' ptype="text"
+                <param description="" formType="text" label="背景图" name='router[2][image]' ptype="text"
                        readonly="false"></param>
-                <param description="" formType="text" label="选中背景图" name='router[2][checked_url]' ptype="text"
+                <param description="" formType="text" label="选中背景图" name='router[2][checked_image]' ptype="text"
                        readonly="false"></param>
             </section>
             <section title="第四组" folded="false">
@@ -45,9 +45,9 @@
                        readonly="false"></param>
                 <param description="" formType="text" label="链接" name='router[3][link]' ptype="text"
                        readonly="false"></param>
-                <param description="" formType="text" label="背景图" name='router[3][pic]' ptype="text"
+                <param description="" formType="text" label="背景图" name='router[3][image]' ptype="text"
                        readonly="false"></param>
-                <param description="" formType="text" label="选中背景图" name='router[3][checked_url]' ptype="text"
+                <param description="" formType="text" label="选中背景图" name='router[3][checked_image]' ptype="text"
                        readonly="false"></param>
             </section>
             <section title="第五组" folded="false">
@@ -55,9 +55,9 @@
                        readonly="false"></param>
                 <param description="" formType="text" label="链接" name='router[4][link]' ptype="text"
                        readonly="false"></param>
-                <param description="" formType="text" label="背景图" name='router[4][pic]' ptype="text"
+                <param description="" formType="text" label="背景图" name='router[4][image]' ptype="text"
                        readonly="false"></param>
-                <param description="" formType="text" label="选中背景图" name='router[4][checked_url]' ptype="text"
+                <param description="" formType="text" label="选中背景图" name='router[4][checked_image]' ptype="text"
                        readonly="false"></param>
             </section>
         </group>
